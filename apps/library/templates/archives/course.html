@@ -1,0 +1,459 @@
+{% extends 'base_layout3.html' %}
+
+{% load static %}
+
+{% block title %} course Name {% endblock title %}
+
+{% block content %}
+
+    <!-- Course Navigation Start -->
+    <header class="fixed bg-black-90 z-5 w-100">
+        <nav class="">
+            <ul class="container90 h3-00 pa0-50 b flex justify-between items-center white-90">
+                <li>
+                    <a href="{% url 'website:courses' %}"
+                        class="white-90">All Courses</a>
+                </li>
+                <li>
+                    <a href="{% url 'website:course' %}"
+                        class="white-90">Program</a>
+                </li>
+                <li>
+                    <a href="{% url 'website:revit' %}"
+                        class="white-90">Revit</a>
+                </li>
+                <li>
+                    <a href="{% url 'website:naviswork' %}"
+                        class="white-90">Naviswork</a>
+                </li>
+                <li>
+                    <a href="{% url 'website:dynamo' %}"
+                    class="white-90">Dynamo</a>
+                </li>
+                <li>
+                    <a href="{% url 'website:python' %}"
+                    class="white-90">Python</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Course Navigation End -->
+    <!-- Course Banner Start -->
+    <figure class="vh-50 w-100
+        grid gtc12  mt3-00"   
+    >
+        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+            alt="" 
+            class="cover gc1s3"
+        />
+        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+            alt="" 
+            class="cover  gc4s3"
+        />
+        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+            alt="" 
+            class="cover h-100 gc7s3"
+        />
+        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+            alt="" 
+            class="cover gc10s3"
+        />
+    </figure>
+    <!-- Course Banner End -->
+
+    <div class="grid gtc12 relative container90 mt3-00"
+    > 
+        <div id="courseNav"
+            class="gc1s3 gr1s1
+                pv2-00 sticky top-8 vh-80 of-y-scroll" 
+        >
+            <ul id="course-01"
+                class="">
+                <h2 class="flex justify-start items-center f1-00 pa0-25 bg-black-60 white-90"
+                >
+                    <a href="javasript:void()"
+                        class="white-90 flex items-center"
+                    >
+                        {% block course_01_logo %}
+                            <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover w2-00 mr1-00"
+                            />
+                        {% endblock course_01_logo %} 
+                        {% block course_01_name %}
+                            Course-01 Name
+                        {% endblock course_01_name %} 
+                    </a>
+                </h2>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 01 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block lesson_01_title %}
+                                    Lesson One Title
+                                {% endblock lesson_01_title %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class="">
+                                Lesson 02
+                            </h4>
+                            <p class="mb0-00">
+                                {% block lesson_02_title %}
+                                    Lesson Two Title
+                                {% endblock lesson_02_title %}
+                            </p>
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class="">
+                                Lesson 03
+                            </h4>
+                            <p class="mb0-00">
+                                {% block lesson_03_title %}
+                                    Lesson Three Title
+                                {% endblock lesson_03_title %}
+                            </p>
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class="">
+                                Lesson 04
+                            </h4>
+                            <p class="mb0-00">
+                                {% block lesson_04_title %}
+                                    Lesson Four Title
+                                {% endblock lesson_04_title %}
+                            </p>
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class="">
+                                Lesson 05
+                            </h4>
+                            <p class="mb0-00">
+                                {% block lesson_05_title %}
+                                    Lesson Five Title
+                                {% endblock lesson_05_title %}
+                            </p>
+                        </hgroup>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="course-02"
+                class="">
+                <h2 class="flex justify-start items-center f1-00 pa0-25 bg-black-60 white-90"
+                >
+                    <a href="javasript:void()"
+                        class="white-90 flex items-center"
+                    >
+                        {% block course_02_logo %}
+                            <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover w2-00 mr1-00"
+                            />
+                        {% endblock course_02_logo %} 
+                        {% block course_02_name %}
+                            Course-02 Name
+                        {% endblock course_02_name %} 
+                    </a>
+                </h2>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 01 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_02_lesson_01 %}
+                                    Lesson One Title
+                                {% endblock course_02_lesson_01 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                     <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 02 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_02_lesson_02 %}
+                                    Lesson Two Title
+                                {% endblock course_02_lesson_02 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                     <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 03 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_02_lesson_03 %}
+                                    Lesson Three Title
+                                {% endblock course_02_lesson_03 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 04 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_02_lesson_04 %}
+                                    Lesson Four Title
+                                {% endblock course_02_lesson_04 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 05 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_02_lesson_05 %}
+                                    Lesson Five Title
+                                {% endblock course_02_lesson_05 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="course-03"
+                class=""
+            >
+                <h2 class="flex justify-start items-center f1-00 pa0-25 bg-black-60 white-90"
+                >
+                    <a href="javasript:void()"
+                        class="white-90 flex items-center"
+                    >
+                        {% block course_03_logo %}
+                            <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover w2-00 mr1-00"
+                            />
+                        {% endblock course_03_logo %} 
+                        {% block course_03_name %}
+                            Course-03 Name
+                        {% endblock course_03_name %} 
+                    </a>
+                </h2>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 01 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_03_lesson_01 %}
+                                    Lesson One Title
+                                {% endblock course_03_lesson_01 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 02 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_03_lesson_02 %}
+                                    Lesson Two Title
+                                {% endblock course_03_lesson_02 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 03 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_03_lesson_03 %}
+                                    Lesson Three Title
+                                {% endblock course_03_lesson_03 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 04 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_03_lesson_04 %}
+                                    Lesson Four Title
+                                {% endblock course_03_lesson_04 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+                <li>
+                    <a href="javasript:void()"
+                        class="black-60"
+                    >
+                        <hgroup class="mb1-00">
+                            <h4 class=""> 
+                                Lesson 05 
+                            </h4>
+                            <p class="mb0-00"> 
+                                {% block course_03_lesson_05 %}
+                                    Lesson Five Title
+                                {% endblock course_03_lesson_05 %}
+                            </p> 
+                        </hgroup>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="courseContent"
+            class="gc4s6  w-100 pt2-00 tj ">
+            
+            <header id="o__bannerBlock" class="
+                flex justify-center items-center 
+                w-100
+                "
+            >
+                <figure class="vh-50 w-100
+                            flex      
+                    ">
+                    <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                        alt="" 
+                        class="cover h-100 w-100"
+                    />
+                </figure>
+            </header>
+            <main>
+                <p class="f1-25 tracked ">
+                    {% lorem 3 p random %} 
+                </p>
+                <ul>
+                    <li>Sheduling</li>
+                    <li>Design Options</li>    
+                    <li>Phasing</li>
+                    <li>Components</li>
+                    <li>Conceptual Massing</li>    
+                    <li>System Elements</li>
+                </ul>
+                <p class="f1-25 tracked ">
+                    {% lorem 3 p random %} 
+                </p>
+            </main>
+            
+            <footer class="bg-black-90 pa1-00 white-90 mb2-00">
+                put a page footer
+            </footer>
+        </div>
+
+        <div id="courseSummary"
+            class="gc10s3 gr1s1 relative"
+        >
+            <div class="sticky top-8 pt2-00 ml1-00 ">
+                
+                <div class="flex flex-column justify-center items-center 
+                    w-100 black-60 tj">	
+                    <hgroup class="tc tl-m w-100 npt2-00 mb2-00">
+                        <h2 class="f1-00 f1-25-s f2-00-l mb0-00">
+                            Before you learn a <span class="gold ttu">{% block course_name%}Course{% endblock course_name%}</span>.
+                        </h2>
+                    </hgroup>
+                    <p class="mb2-00 mb6-00-m f1-25 f1-50-l
+                            tc tl-m
+                    ">
+                        {% block course_description %}
+                            Self directed experiential learning allows you to develop your skills, now and in the future.
+                        {% endblock course_description %}
+                    </p>
+                    <ul>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                    
+                </div> 
+                <small class="flex ba pa0-50 
+                    bg-black-60 white-90"
+                >
+                    BACK
+                </small>
+                <h4 class="f1-00 pa0-25 bg-black-50 white-90">Revit Mastery Documentation</h4>
+                <li>Sheduling</li>
+                <li>Design Options</li>    
+                <li>Phasing</li>
+                 <li>Components</li>
+                <li>Conceptual Massing</li>    
+                <li>System Elements</li>
+            </div>
+        </div>
+
+        <div id=""
+            class="gc4s9">
+            {% include 'partials/_mainFooter.html' %}
+        </div>
+            
+        
+    </div>
+{% endblock %}    

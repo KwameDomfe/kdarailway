@@ -1,0 +1,30 @@
+{% load static %}
+<div id="m__kda--Logo" 
+    class="h-100" 
+    tabindex="0" 
+    title="Kwame Domfe Appau's Logo" 
+    aria-label="Kwame Domfe Appau's Logo"
+    >
+    <a href="{% url 'website:index' %}">
+        <figure class="flex items-center justify-center"   
+        >   
+            <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                    alt="Geolo Logo" 
+                    class=" w4-00 h4-00
+                            br-100"
+            />
+            <figcaption class=" flex flex-column items-center justify-center  
+                                ml1-00
+                                w14-00
+                                white-90">
+                <h2 class="mb0-50 f1-00 tracked">
+                    KWAME DOMFE APPAU
+                </h2> 
+                <h3 class="flex justify-center items-center f0-50 mb0-00 tracked">
+                    designer || programmer || developer
+                </h3>
+            </figcaption>
+        </figure>   
+    </a>
+</div>
+

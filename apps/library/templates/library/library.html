@@ -1,0 +1,203 @@
+{% extends 'base_layout3.html' %}
+
+{% load static %}
+
+{% block title %} Style Guide {% endblock title %}
+
+{% block content %}
+
+    {% comment %} <div id="discover_nav"
+        class="fixed 
+            w-100 
+            bg-black-60 
+            z-5"
+    >
+        {% include '_partials/discover_nav.html' %}
+    </div> {% endcomment %}
+        
+    <div id=""
+        class="grid gtc12 
+            w-100 
+            container80 
+            relative
+        "
+    > 
+        {% block libraryAsideRight %}
+            <aside id=""
+                class="gc1s6 
+                    relative
+                "
+            >
+                <div id="" 
+                    class="flex justify-end  
+                        vh-90 
+                        mb3-00 
+                        bg-black-60 
+                        sticky top-5
+                    "
+                >
+                    <div class="flex justify-end 
+                            h-100 w-100
+                        "
+                    >
+                        <div class="flex flex-column justify-between items-center   
+                                w-50
+                                ph1-00
+                                white-90
+                                tj
+                            "
+                        >	
+                            <div class="flex justify-start 
+                                    w-100 
+                                    pv1-00 
+                                    white-90 f0-75
+                                "
+                            >
+                                <span>
+                                    <a href="{% url 'website:discover' %}"
+                                        class="white-90"
+                                    >
+                                        Discover
+                                    </a> &gt;
+                                <span />
+                                <span class="gold">
+                                    Style Guide
+                                <span /> 
+                                &gt;
+                            </div>
+                            <div 
+                                class="flex flex-column justify-end items-center   
+                                    pt3-00 
+                                    white-90
+                                    tj
+                                "
+                            >	
+                                <hgroup class="tc tl-m w-100 mb1-00"
+                                >
+                                    {% comment %} <p class="f0-75 mv0-00">
+                                        discover
+                                    </p> {% endcomment %}
+                                    <h2 class="f1-50 mv0-00 pb1-00">
+                                        Style Guide
+                                    </h2>
+                                </hgroup>
+                                <p class="mb0-00 f1-25 f1-50-s f1-00-l w-100
+                                        "
+                                >
+                                    {% lorem 20 w random %}
+                                </p>
+                                <ul class="dib flex flex-column justify-start 
+                                    w-100 
+                                    mv4-00 
+                                    b"
+                                >
+                                    <li class="mb0-50">
+                                        <a href="#style_guide_tags"
+                                            class="gold">Tags
+                                        </a>
+                                    </li>
+                                    <li class="mb0-50">
+                                        <a href="#style_guide_atoms"
+                                            class="gold">Atoms
+                                        </a>
+                                    </li>
+                                    <li class="mb0-50">
+                                        <a href="#style_guide_molecules"
+                                            class="gold">Molecules
+                                        </a>
+                                    </li>
+                                    <li class="mb0-50">
+                                        <a href="#style_guide_organisms"
+                                            class="gold">Organisms
+                                        </a>
+                                    </li>
+                                    <li class="mb0-50">
+                                        <a href="#style_guide_templates"
+                                            class="gold">Templates
+                                        </a>
+                                    </li>
+                                    <li class="mb0-50">
+                                        <a href="#style_guide_pages"
+                                            class="gold">Pages
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+            </aside>
+        {% endblock libraryAsideRight %}
+
+        {% block libraryMain %}
+            <div id="libraryMain"
+                class="gc7s6 pl1-00"
+            >
+                <header id="o__bannerBlock" 
+                    class="flex justify-center items-center"
+                >
+                    <div class="w-100 h-100"
+                    >
+                        <figure class= ""
+                        >
+                            <img src="/static/images/Portrait_Images/students_coding.jpg" alt="" 
+                                class="cover vh-50"
+                            /> 
+                            <hgroup class="gc1s12 tl mv2-00 w-60"
+                            >
+                                <h2>
+                                    {% block pageTitle %}Style Guide{% endblock pageTitle %}
+                                </h2>
+                                <p id=""
+                                >
+                                    {% block pageDescription %}
+                                        {% lorem 60 w random %}.
+                                    {% endblock pageDescription %}
+                            </p>
+                            </hgroup>  
+                        </figure>  
+                    </div>
+                </header>
+
+                <article id=""
+                    class=""
+                >
+                    <div class="grid gtc12 
+                        pt-00 ggap2-00"
+                    >
+                        <div class="gc1s12"
+                        >
+                            <section class=""
+                            >
+                                {% block pageContent %} 
+                                    Replace this content
+                                {% endblock pageContent %}
+                            </section>
+                        </div>
+                        <div class="gc1s12"
+                        >
+                            <section
+                            >
+                                replace this content
+                            </section>
+                        </div>
+                    </div>
+                </article>
+                
+                <footer id=""
+                    class="bg-black-90 pa1-00 white-90 mb3-00"
+                >
+                    <div >
+                        library footer
+                    </div>
+                </footer>
+            </div>
+        {% endblock libraryMain %}
+
+        {% block libraryFooter %}
+            <div class="gc1s12">
+                {% include 'partials/_mainFooter.html' %}
+            </div>
+        {% endblock libraryFooter %}
+    </div>
+{% endblock content %}

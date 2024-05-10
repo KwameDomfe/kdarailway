@@ -1,0 +1,138 @@
+{% extends 'base_layout2.html' %}
+{% load static %}
+
+{% block title %} Layouts {% endblock title %}
+
+{% block content %}
+    <div class="grid gtc12 container90 min-vh-90-m">
+        <!-- Authenthication Form Start --> 
+        <div class="gc1s3 flex items-center justify-center 
+            w-100 bg-black-60 white-90"
+        >
+            {% block authenthicationForm %}
+                
+            {% endblock authenthicationForm %} 
+        </div> 
+        <!-- Authenthication Form End --> 
+        <!-- Authenthication Banner Start --> 
+        <div class="gc4s9 flex items-center justify-center 
+            w-100 bg-white-90"
+            > 
+            {% block authenthicationBanner %}
+                
+                <div 
+                    class="w-100"
+                >
+                    <div id="2_column_layouts"
+                        class="w-100 bg-gray flex flex-column"
+                    >
+                        <h2 class="bg-white pa1-00 ttu">2-columns</h2>
+                        <h2 class="mv0-00">2 column 1 of 3</h2>
+                        <div id="01"
+                            class=" mv2-00 grid gtc12 bg-blue0 w-100 vh-50"
+                        >
+                            <div id=""
+                                class="gc1s3 w-100  bg-white"
+                            >   
+                                
+                            </div>
+                            <div id=""
+                                class="gc4s9 w-100  bg-red"
+                            >   
+                                
+                            </div>
+                        </div> 
+                        <h2 class="gc1s12 mv0-00 w-100">2 column 2 of 3 </h2>
+                        <div id="03"
+                            class=" mv2-00 grid gtc12 w-100 bg-gray vh-50"
+                        >    
+                            <div id=""
+                                class="gc1s9 w-100 bg-white"
+                            >   
+                                
+                            </div>
+                            <div id=""
+                                class="gc10s3 w-100 bg-red"
+                            >   
+                                
+                            </div>
+                        </div> 
+                       
+                        <h2 class="gc1s12 mv0-00">2 column 3 of 3</h2>
+                        <div id="02"
+                            class=" mv2-00 grid gtc12 w-100 vh-50 bg-white"
+                        >   
+                            <div id=""
+                                class="gc1s6 w-100 bg-white"
+                            >   
+                                
+                            </div>
+                            <div id=""
+                                class="gc7s6 w-100 bg-red"
+                            >   
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="3_column layouts"
+                        class="w-100 bg-gray"
+                    >   <h2 class="bg-white pa1-00 ttu">3-columns</h2>
+                        <h2 class="mv0-00">3 column 1 of 3</h2>
+                        <div id="01"
+                            class=" mv2-00 grid gtc12 w-100 min-vh-80 bg-gray"
+                        >   
+                            <div id=""
+                                class="gc1s3 w-100 bg-red"
+                            >   
+                                
+                            </div>
+                            <div id=""
+                                class="gc4s6 w-100 bg-gold"
+                            >   
+                                
+                            </div>
+                            <div id=""
+                                class="gc10s3 w-100 bg-red"
+                            >   
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="4_column layouts"
+                        class="w-100 bg-gray"
+                    >   <h2 class="bg-white pa1-00 ttu">4-columns</h2>
+                        <h2 class="mv0-00">4 column 1 of 1</h2>
+                        <div id="01"
+                            class=" mv2-00 grid gtc12 w-100 bg-gray"
+                        >   
+                            <div id=""
+                                class="gc1s3 w-100 bg-red h0-00 pb-100"
+                            >   
+                                
+                            </div>
+                            <div id=""
+                                class="gc4s3 w-100 bg-gold"
+                            >   
+                                
+                            </div>
+                            <div id=""
+                                class="gc7s3 w-100 bg-red"
+                            >   
+                                
+                            </div>
+                           
+                            <div id=""
+                                class="gc10s3 w-100 bg-blue0"
+                            >   
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            {% endblock authenthicationBanner %} 
+        </div>
+        <!-- Authenthication Banner End --> 
+    </div>
+{% endblock content %}

@@ -1,0 +1,612 @@
+{% extends 'base_layout2.html' %}
+
+{% load static %}
+
+{% block title %} 
+    Home 
+{% endblock title %}
+
+{% block others %}   
+    
+{% endblock others %}
+
+
+{% block content %}
+
+    <section id="o__banner__homepage--banner" 
+        class="flex flex-column justify-center items-center 
+            flex-row-m 
+            container90"
+    >
+        <div id=""
+            class="flex flex-column 
+                w-100 
+                w-50-m"
+        >
+            <figure class="flex flex-column items-center justify-center 
+                "
+            >
+                <img src="{% static 'images/Portrait_Images/students_coding.jpg' %}"            
+                    alt=""
+                    class="vh-50 vh-90-m cover"
+                />
+                {% comment %} <figcaption class="flex justify-around items-center container80 bg-black-10 w-50 h3-00 mb1-00 br2-00 shadow-4">
+                    <div class="w1-00 h1-50 bg-gold br5-00"></div>
+                    <div class="w1-00 h1-50 bg-black-50 br5-00"></div>
+                    <div class="w1-00 h1-50 bg-black-50 br5-00"></div>
+                </figcaption> {% endcomment %}
+            </figure>     
+        </div>
+        <div class="flex flex-column justify-center items-center 
+            w-100 w-50-m black-60 pl1-00"
+            >	
+            <hgroup class="tc w-100 npt2-00">
+                <h1 class="f1-50 f1-75-s f2-50-l mb1-00 
+                ">  
+                    Evolve in your Career.                 
+                </h1>
+                <h2 class="f1-25 f1-50-s f2-25-l mb3-00"
+                >
+                    Learn to author and read <span class="gold">BIM Models</span>.
+                </h2>
+            </hgroup>
+            <p class="mb4-00 f1-25 f1-50-s f2-00-l
+                    tc
+            ">
+                Self directed experiential learning allows you to develop your skills, now and in the future.
+            </p>
+            <div class="flex w-100 justify-center mb2-00"> 
+                <a href="{% url 'website:courses' %}" 
+                class=" dib 
+                        pv0-50
+                        ph1-00
+                        mb1-00-m mr2-00
+                        bg-white gold
+                        ba bw1 br2-00
+                        ttu
+                        f1-00 
+                        fw6
+                        shadow-4
+                ">
+                    explore courses 
+                </a>
+                <a href="{% url 'website:enrol' %}" 
+                class=" dib
+                        pv0-50
+                        ph1-00
+                        mb1-00-m
+                        bg-gold white
+                        ba bw1 br2-00
+                        ttu
+                        f1-00 
+                        fw6
+                        shadow-4
+                ">
+                    enrol
+                </a>
+            </div>
+        </div> 
+    </section>
+
+    <section id=""
+        class="" 
+    >
+        <div class="flex flex-column justify-center tc w-100
+            mb2-00"
+        >
+            <hgroup class="flex flex-column justify-center white-90 bg-black-60 tc vh-60">
+                <h1 class="f2-50 mv2-00 container80">
+                    Career-changing Software Courses for <br> Architectural Engineering and Construction (AEC) Professionals.
+                </h1>
+                <h3 class="f1-50 container80 mb2-00">
+                    400-hour programs that have helped thousands of students launch new careers in AEC.
+                </h3>
+            </hgroup>
+        
+            <div class="flex ggap0-25 justify-center mv2-00 items-center vh-60 container90
+                "
+            >  {% comment %}<span>left</span> {% endcomment %}
+               <div class="bg-black-60 h-100 w-25"
+               >
+                    <img src="{% static 'images\Autodesk\Infotainment_2016_01.png' %}" 
+                        alt=""
+                        class="h-40 cover"
+                    />
+                    <hgroup class="flex flex-column justify-between items-start
+                        h-60 ph1-00"
+                    >
+                        <div id="" 
+                            class="flex flex-column flex-end justify-center
+                                "
+                        >
+                            <h2 class="mv0-50 white-90">
+                                Autodesk Revit
+                            </h2>
+                            <p class="mb1-00 white-90 tj">
+                                Autodesk Revit {% lorem 10 w random %}
+                            </p>
+                            <a href="" class="white-90 mb0-50">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Dashboard </figcaption>
+                                </figure>
+                            
+                            </a>
+                            
+                            <a href="" class="white-90 mb0-50 ">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Settings </figcaption>
+                                </figure>
+                            
+                            </a>
+
+                            <a href="" class="white-90">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Logout </figcaption>
+                                </figure>
+                            
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-center 
+                            w-100 
+                            mv1-00"
+                        >
+                            <a href="{% url 'website:revit' %}"
+                                class="pv0-50 ph1-00 white bg-gold br0-25
+                                    f1-00 ttu shadow-4 fw6"
+                            >
+                            Learn Autodesk Revit
+                            </a>
+                        </div>
+                    </hgroup>
+                </div>
+                <div class="bg-black-60 h-100 w-25"
+                >
+                    <img src="{% static 'images\Autodesk\Infotainment_2016_02.png' %}" 
+                        alt=""
+                        class="h-40 cover"
+                    />
+                    <hgroup class="flex flex-column justify-between
+                        h-60 ph1-00">
+                        <div id="" 
+                        class="flex flex-column flex-end justify-center
+                        "
+                        >
+                            <h2 class="mv0-50 white-90">
+                            Autodesk Naviswork
+                            </h2>
+                            <p class="mb1-00 white-90 tj">
+                            Autodesk Naviswork {% lorem 10 w random %}
+                            </p>
+                            <a href="" class="white-90 mb0-50">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Dashboard </figcaption>
+                                </figure>
+                            
+                            </a>
+                            
+                            <a href="" class="white-90 mb0-50 ">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Settings </figcaption>
+                                </figure>
+                            
+                            </a>
+
+                            <a href="" class="white-90">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Logout </figcaption>
+                                </figure>
+                            
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-center 
+                            w-100 
+                            mv1-00"
+                        >
+                            <a href="{% url 'website:naviswork' %}"
+                                class="pv0-50 ph1-00 white bg-gold br0-25
+                                    f1-00 ttu shadow-4 fw6"
+                            >
+                            Learn Autodesk Naviswork
+                            </a>
+                        </div>
+        
+                    </hgroup>
+                </div>
+                <div class="bg-black-60 h-100 w-25"
+                >
+                    <img src="{% static 'images\Autodesk\Infotainment_2016_03.png' %}" 
+                        alt=""
+                        class="h-40 cover"
+                    />
+                    
+                    <hgroup class="flex flex-column justify-between
+                        h-60 ph1-00">
+                        <div id="" 
+                            class="flex flex-column flex-end justify-center
+                            "
+                        >
+                            <h2 class="mv0-50 white-90">
+                                Autodesk Dynamo
+                            </h2>
+                            <p class="mb1-00 white-90 tj">
+                                Autodesk Dynamo {% lorem 10 w random %}
+                            </p>
+                            <a href="" class="white-90 mb0-50">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Dashboard </figcaption>
+                                </figure>
+                            
+                            </a>
+                            
+                            <a href="" class="white-90 mb0-50 ">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Settings </figcaption>
+                                </figure>
+                            
+                            </a>
+
+                            <a href="" class="white-90">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Logout </figcaption>
+                                </figure>
+                            
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-center 
+                            w-100 
+                            mv1-00"
+                        >
+                            <a href="{% url 'website:dynamo' %}"
+                                class="pv0-50 ph1-00 white bg-gold br0-25
+                                    f1-00 ttu shadow-4 fw6"
+                            >
+                            Learn Autodesk Dynamo
+                            </a>
+                        </div>
+                    </hgroup>
+                </div>
+                <div class="bg-black-60 h-100 w-25"
+                >
+                    <img src="{% static 'images\Autodesk\Infotainment_2016_04.png' %}" 
+                        alt=""
+                        class="h-40 cover"
+                    />
+                    <hgroup class="flex flex-column justify-between
+                        h-60 ph1-00">
+                        <div id="" 
+                        class="flex flex-column flex-end justify-center
+                        "
+                        >
+                        <h2 class="mv0-50 white-90">
+                            Python
+                        </h2>
+                        <p class="mb1-00 white-90 tj">
+                            Python {% lorem 10 w random %}
+                        </p>
+                            <a href="" class="white-90 mb0-50">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Dashboard </figcaption>
+                                </figure>
+                            
+                            </a>
+                            
+                            <a href="" class="white-90 mb0-50 ">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Settings </figcaption>
+                                </figure>
+                            
+                            </a>
+
+                            <a href="" class="white-90">
+                                <figure class="flex items-center"> 
+                                    <img src="/static/images/Logo_Images/LOGO.png" alt="" class="w1-00 h1-00 
+                                            mr0-75">
+                                    <figcaption>  Logout </figcaption>
+                                </figure>
+                            
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-center 
+                        w-100 
+                        mv1-00">
+                            <a href="{% url 'website:python' %}"
+                                class="pv0-50 ph1-00 white bg-gold br0-25
+                                    f1-00 ttu shadow-4 fw6"
+                            >
+                            Learn Python
+                            </a>
+                        </div>
+                    </hgroup>
+                </div>
+                {% comment %} <span>right</span> {% endcomment %}
+            </div>
+
+            <div class="bg-black-60 white-90 pt1-00">
+                <p>You can start for FREE! </p>
+                <p>Try out my youtube <a href="http://www.youtube/..." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="gold"
+                >
+                    Kwame Domfe Appau</a> channel for <b>expert training</b> snippets on 
+                    <a href="" class="gold">Revit</a>, 
+                    <a href="" class="gold">naviswork</a>, 
+                    <a href="" class="gold">Autodesk Dynamo</a>, 
+                    <a href="" class="gold">python</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    {% comment %} <section id = "domainName"
+        class='grid gtc12 items-center justify-center
+            w-100 mb4-00
+            bb b--white-20 bw3'
+    >
+        <div class="gc1s8 flex flex-column items-center justify-center
+            container80"
+        >
+            <div class="flex flex-column justify-center items-start  
+                mv4-00"
+            >
+                <h2 class="f2-50 mb2-00">
+                    First, you need a  </br> <span class="dib gold">Part Time Skilled Courses</span> <br> that extends your career.
+                </h2>
+                <p class="f1-25 mb1-00">
+                    Become better at your current job or discover a new topic. Join experienced teachers in online live sessions, two evenings a week. 
+                </p>
+                
+                <a class="gold ba pa0-50 br0-25" href="">EXPLORE</a>
+            </div>
+            <div class="grid gtc12 ggap0-25 w-100 white-90 items-center justify-center
+                "
+            >
+                <div class="gc1s3 gr1s1 w-100 h0-00 pb-100 bg-black-50">Revit Architecture</div>
+                <div class="gc10s3 gr1s1 w-100 h-100 bg-black-70">Revit Structures</div>
+                <div class="gc1s3 gr2s1 w-100 h0-00 pb-100 bg-black-30">Revit MEP</div>
+                <div class="gc4s3 gr2s1 w-100 h0-00 pb-100 bg-black-10">Autodesk Naviswork</div> 
+                <div class="gc7s3 gr3s1 w-100 h0-00 pb-100 bg-black-90">Autodesk Dynamo</div> 
+                <div class="gc10s3 gr2s1 w-100 h0-00 pb-100 bg-black-60">3D Studio Max</div> 
+                <div class="gc7s3 gr2s1 w-100 h0-00 pb-100 bg-black-40">Python</div> 
+                <div class="gc4s3 gr1s1 w-100 h0-00 pb-100 bg-black-40">Python</div> 
+            </div>
+        </div>
+
+        <figure class="gc9s4 flex justify-center items-center h-100">
+            <img 
+                src="{% static 'images/Landscape_Images/RectLandscape.jpg' %}" 
+                class="w-100 h-100 cover" 
+                alt=""
+            />
+        </figure>
+        
+    </section> {% endcomment %}
+
+    {% comment %} <section id=""
+        class='min-vh-75 flex items-center justify-center bb b--white-20 bw3'>
+        <div class="flex items-center flex-row-reverse container80 h-100">
+            <div class="flex flex-column justify-center items-center w-50 pl2-00
+                ">
+                <h2 class="f2-50 mb3-00">
+                    Second, you need a<span class="dib gold">Website Hosting Provider</span>(Digital Post Office).
+                </h2>
+                <p class="f1-50">
+                    No matter the scale of your business needs, we can facilitate your website hosting that can extend your business philosophy.
+                </p>
+                <p class="f1-50">
+                    Free hosting option is also available for indivuals. (T&C Applies)
+                </p>
+            </div>
+            <div class="w-50 h-100">
+                <img src="{% static 'images/Landscape_Images/RectLandscape.jpg' %}" 
+                class="" 
+                alt="">
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    {% comment %} <section id="" 
+        class='min-vh-50 flex items-center justify-center bb b--white-20 bw3'
+    >
+        <div class="flex items-center container80 h-100">
+            <div class="flex flex-column justify-center items-start w-50 
+                ">
+                <h2 class="f2-50">
+                    Get a Bespoke Web Applications .
+                </h2>
+                <h5 class="f1-50">
+                    Transform your business with a website that extends beyond the physical realm. 
+                </h5>
+            </div>
+        </div>
+    </section> {% endcomment %}
+    
+    {% comment %} <section id=""
+        class='min-vh-75 flex items-center justify-center bb b--white-20 bw3'>
+        <div class="flex items-center flex-row-reverse container80 h-100">
+            <div class="flex flex-column justify-center items-center w-50 ph6-00
+                ">
+                <h2 class="f3-00">
+                    Download your shows to watch offline.
+                </h2>
+                <h5 class="f1-00">
+                    Save your favorites easily and always have something to watch.
+                </h5>
+            </div>
+            <div class="flex justify-center items-center w-50">
+                <img 
+                src="{% static 'images/Landscape_Images/LandscapeImage_2.jpg' %}" 
+                class="w-100" 
+                alt="">
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    {% comment %} <section id="index_faqs"
+        class="mb2-00 bb b--white-20 bw3"
+    >
+        <div class="grid gtc12 container80 bg-black-10 pa1-00 ggap1-00">
+            <hgroup class="gc1s12 tc mv2-00">
+                <h2>Frequently Asked Questions</h2>
+            </hgroup>
+           
+            <div class="gc1s6">
+                <article class="mb2-00">
+                    <header>
+                        <hgroup class="flex">
+                            <h2>What is Kewame Domfe Appau??</h2>
+                            <h2>+</h2>
+                        </hgroup>
+                    </header>
+                    <main>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                    </main>
+                    <footer>
+                        <a href="">CTA</a>
+                    </footer>
+                </article>
+                <article class="mb2-00">
+                    <header>
+                        <hgroup class="flex">
+                            <h2>What is Kewame Domfe Appau??</h2>
+                            <h2>+</h2>
+                        </hgroup>
+                    </header>
+                    <main>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                    </main>
+                    <footer>
+                        <a href="">CTA</a>
+                    </footer>
+                </article>
+                <article class="mb2-00">
+                    <header>
+                        <hgroup class="flex">
+                            <h2>What is Kewame Domfe Appau?</h2>
+                            <h2>+</h2>
+                        </hgroup>
+                    </header>
+                    <main>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                    </main>
+                    <footer>
+                        <a href="">CTA</a>
+                    </footer>
+                </article>
+            </div>
+            <div class="gc7s6">
+                <article class="mb2-00">
+                    <header>
+                        <hgroup class="flex">
+                            <h2>What is Kewame Domfe Appau??</h2>
+                            <h2>+</h2>
+                        </hgroup>
+                    </header>
+                    <main>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                    </main>
+                    <footer>
+                        <a href="">CTA</a>
+                    </footer>
+                </article>
+                <article class="mb2-00">
+                    <header>
+                        <hgroup class="flex">
+                            <h2>What is Kewame Domfe Appau??</h2>
+                            <h2>+</h2>
+                        </hgroup>
+                    </header>
+                    <main>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                    </main>
+                    <footer>
+                        <a href="">CTA</a>
+                    </footer>
+                </article>
+                <article class="mb2-00">
+                    <header>
+                        <hgroup class="flex">
+                            <h2>What is Kewame Domfe Appau?</h2>
+                            <h2>+</h2>
+                        </hgroup>
+                    </header>
+                    <main>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                    </main>
+                    <footer>
+                        <a href="">CTA</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <section id="index_start"
+        class="flex white-90">
+        <div class="w-50  mv4-00 pv4-00 "
+        >
+            <h5 class="mb2-00 f1-50 container80 tc black-60">
+                Ready to learn ?
+            </h5>
+            <div class="flex justify-center
+                pa1-00">
+                <!-- Login In User -->
+                <a href="{% url 'accounts:register' %}" 
+                class="flex
+                    pv0-50 ph1-00
+                    bg-gold white
+                    br0-25
+                    f1-00 ttu fw6
+                    shadow-4"
+                >
+                    <h3 class="mb0-00 f1-00">START</h3>
+                </a> 
+                <!-- Logged In User -->
+            </div>
+        </div>
+        <div class="w-50  mv4-00 pv4-00 "
+        >
+            <h5 class="mb2-00 f1-50 container80 tc black-60">
+                Started already?
+            </h5>
+            <div class="flex justify-center
+                pa1-00">
+                <!-- Login In User -->
+                <a href="{% url 'accounts:login' %}" 
+                class="flex
+                    pv0-50 ph1-00
+                    bg-gold white
+                    br0-25
+                    f1-00 ttu fw6
+                    shadow-4"
+                >
+                    <h3 class="mb0-00 f1-00">LOGIN</h3>
+                </a> 
+                <!-- Logged In User -->
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

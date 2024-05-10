@@ -1,0 +1,259 @@
+{% extends 'base_layout3.html' %}
+
+{% load static %}
+
+{% block title %} Style Guide {% endblock title %}
+
+{% block content %}
+
+{% comment %} <div id=""
+    class="fixed bg-black-50 z-5 w-100">
+    {% include '_partials/discover_nav.html' %}
+</div> {% endcomment %}
+
+<div id=""
+    class="grid gtc12 container90 bb3-00"
+>
+    <div class="gc1s6 gr1s1"
+    >
+        <div class="flex justify-end sticky mb3-00 top-5 vh-90 bg-black-60"
+        >
+            <div class="flex justify-end 
+                h-100 w-100
+                "
+            >
+                <div class="flex flex-column justify-between items-center   
+                    w-50
+                    ph1-00
+                    white-90
+                    tj"
+                >	
+                    <div class="flex justify-start w-100 white-90 f0-75 pv1-00">
+                        <span>
+                            <a href="{% url 'website:discover' %}"
+                                class="white-90"
+                            >
+                                Discover
+                            </a> &gt;
+                        <span/>
+                        <span class="gold">
+                            Style Guide
+                        <span/> 
+                        &gt;
+                    </div>
+                    <div class="flex flex-column justify-end items-center   
+                        
+                        pt3-00 
+                        white-90
+                        tj"
+                    >	
+                        <hgroup class="tc tl-m w-100 mb1-00"
+                        >
+                            {% comment %} <p class="f0-75 mv0-00">
+                                discover
+                            </p> {% endcomment %}
+                            <h2 class="f1-50 mv0-00 pb1-00"
+                            >
+                                Style Guide
+                            </h2>
+                        </hgroup>
+                        <p class="mb0-00 f1-25 f1-50-s f1-00-l w-100
+                                "
+                        >
+                            {% lorem 20 w random %}
+                        </p>
+                        <ul class="dib flex flex-column justify-start mv4-00 w-100 b">
+                            <li class="mb0-50">
+                                <a href="#style_guide_tags"
+                                    class="gold"
+                                >
+                                    Tags
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#style_guide_atoms"
+                                    class="gold">Atoms
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#style_guide_molecules"
+                                    class="gold">Molecules
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#style_guide_organisms"
+                                    class="gold">Organisms
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#style_guide_templates"
+                                    class="gold">Templates
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#style_guide_pages"
+                                    class="gold">Pages
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div class="gc7s6 gr1s1 grid container mb3-00"
+    >
+        
+        <header id="o__bannerBlock" 
+            class="
+                flex justify-center items-center 
+            "
+        >
+            <div class="w-100">
+                <figure class="vh-60 flex items-center justify-center
+                                
+                    "
+                >
+                    <img src="/static/images/Portrait_Images/students_coding.jpg" alt="" 
+                        class="cover h-100"
+                        />
+                </figure>  
+                    
+                <figcaption class="gc1s12 tc mv2-00">
+                        <h2>Style Guide</h2>
+                </figcaption>    
+            </div>
+        </header>
+
+        <main class="">
+            <div class="grid gtc12 bg-black-10 ggap2-00"
+            >
+                <div class="gc1s12"
+                >
+                    <article id="style_guide_tags" 
+                        class="pt10-00 pa1-00"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Tags</h2>
+                                <h2>+</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'library:tags' %}">Discover HTML Tags</a>
+                        </footer>
+                    </article>
+                    <article id="style_guide_atoms" 
+                        class="pt10-00 pa1-00"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Atoms</h2>
+                                <h2>+</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'library:atoms' %}">Discover Atoms</a>
+                        </footer>
+                    </article>
+                    <article id="style_guide_molecules" 
+                        class="pt10-00 pa1-00"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Molecules</h2>
+                                <h2>+</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'library:molecules' %}">Discover Molecules</a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="gc1s12"
+                >
+                    <article id="style_guide_organisms" 
+                        class="pt10-00 pa1-00"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Organisms</h2>
+                                <h2>+</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'library:organisms' %}">Discover organisms</a>
+                        </footer>
+                    </article>
+                    <article id="style_guide_templates"
+                        class="pt10-00 pa1-00"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Templates</h2>
+                                <h2>+</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'library:templates' %}">Discover Templates</a>
+                        </footer>
+                    </article>
+                    <article id="style_guide_pages"
+                        class="pt10-00 pa1-00"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Pages</h2>
+                                <h2>+</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'library:pages' %}">Discover Pages</a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="bg-black-90 pa1-00 white-90">
+            <div class="flex justify-start w-100 white-90 f0-75">
+                <span>
+                    <a href="{% url 'website:discover' %}"
+                        class="white-90"
+                    >
+                        Discover
+                    </a> &gt;
+                <span/>
+                <span class="gold">
+                    Style Guide
+                <span/> 
+                
+            </div>
+        </footer>
+    </div>
+    
+    <div class="gc1s12">
+        {% include 'partials/_mainFooter.html' %}
+    </div> 
+</div>
+
+{% endblock %}

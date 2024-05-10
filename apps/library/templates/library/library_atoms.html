@@ -1,0 +1,2193 @@
+{% extends 'library/library.html' %}
+{% load static %}
+
+{% block title %} Atoms {% endblock title %}
+
+
+{% block pageTitle %}Atoms{% endblock pageTitle %}
+
+
+
+<div 
+    class=" flex w-100 h-100"
+>
+    {% block pageT %} Atoms {% endblock pageT %}
+    {% block Category_01 %}Content{% endblock Category_01 %}
+    {% block C1T1 %}Typography{% endblock C1T1 %}
+    {% block C1T11 %}Headings{% endblock C1T11 %}
+    {% block C1T12 %}Paragraphs{% endblock C1T12 %}
+    {% block C1T13 %}Formatting Tags{% endblock C1T13 %}
+    {% block C1T14 %}{% endblock C1T14 %}
+    {% block C1T15 %}{% endblock C1T15 %}
+    {% block C1T16 %}Lists{% endblock C1T16 %}
+    {% block C1T17 %}Text Utilities{% endblock C1T17 %}
+    {% block C1T2 %}Images{% endblock C1T2 %}
+    {% block C1T21 %}Regular Images{% endblock C1T21 %}
+    {% block C1T22 %}Portrait Images{% endblock C1T22 %}
+    {% block C1T23 %}Landscape Images{% endblock C1T23 %}
+    {% block C1T3 %}Tables{% endblock C1T3 %}
+    {% block C1T31 %}Regular Images{% endblock C1T31 %}
+    {% block C1T32 %}Portrait Images{% endblock C1T32 %}
+    {% block C1T33 %}Landscape Images{% endblock C1T33 %}
+    {% block C1T4 %}Figures{% endblock C1T4 %}
+    {% block C1T41 %}Regular Images{% endblock C1T41 %}
+    {% block C1T42 %}Portrait Images{% endblock C1T42 %}
+    {% block C1T43 %}Landscape Images{% endblock C1T43 %}
+    {% block C1T5 %}Forms{% endblock C1T5 %}
+    {% block C1T51 %}Regular Images{% endblock C1T51 %}
+    {% block C1T52 %}Portrait Images{% endblock C1T52 %}
+    {% block C1T53 %}Landscape Images{% endblock C1T53 %}
+    {% block C1T6 %}Colours{% endblock C1T6 %}
+    {% block C1T61 %}Foreground Colours{% endblock C1T61 %}
+    {% block C1T62 %}Background Colours{% endblock C1T62 %}
+    {% block C1T63 %}{% endblock C1T63 %}
+    {% block C1T7 %}Colours{% endblock C1T7 %}
+    {% block C1T71 %}Foreground Colours{% endblock C1T71 %}
+    {% block C1T72 %}Background Colours{% endblock C1T72 %}
+    {% block C1T73 %}{% endblock C1T73 %}
+    
+    {% block Category_02 %}Forms{% endblock Category_02 %}
+    {% block C2T1 %}Overview{% endblock C2T1 %}
+        {% block C2T11 %}Inputs{% endblock C2T11 %}
+        {% block C2T12 %}Text Area {% endblock C2T12 %}
+        {% block C2T13 %}Buttons{% endblock C2T13 %}
+        {% block C2T14 %}Select{% endblock C2T14 %}
+        {% block C2T15 %}Option Group{% endblock C2T15 %}
+        {% block C2T16 %}Option{% endblock C2T16 %}
+        {% block C2T17 %}Labels{% endblock C2T17 %}
+        {% block C2T18 %}Fieldset{% endblock C2T18 %}
+        {% block C2T19 %}Legends{% endblock C2T19 %}
+        {% block C2T110 %}datalist{% endblock C2T110 %}
+        {% block C2T111 %}output{% endblock C2T111 %}
+    {% block C2T2 %}Vertical Forms{% endblock C2T2 %}
+        {% block C2T21 %}Regular Images{% endblock C2T21 %}
+        {% block C2T22 %}Portrait Images{% endblock C2T22 %}
+        {% block C2T23 %}Landscape Images{% endblock C2T23 %}
+    {% block C2T3 %}Horizontal Forms{% endblock C2T3 %}
+        {% block C2T31 %}Regular Images{% endblock C2T31 %}
+        {% block C2T32 %}Portrait Images{% endblock C2T32 %}
+        {% block C2T33 %}Landscape Images{% endblock C2T33 %}
+    {% block C2T4 %}Figures{% endblock C2T4 %}
+        {% block C2T41 %}Regular Images{% endblock C2T41 %}
+        {% block C2T42 %}Portrait Images{% endblock C2T42 %}
+        {% block C2T43 %}Landscape Images{% endblock C2T43 %}
+    {% block C2T5 %}Forms{% endblock C2T5 %}
+        {% block C2T51 %}Regular Images{% endblock C2T51 %}
+        {% block C2T52 %}Portrait Images{% endblock C2T52 %}
+        {% block C2T53 %}Landscape Images{% endblock C2T53 %}
+    {% block C2T6 %}Colours{% endblock C2T6 %}
+        {% block C2T61 %}Colurs{% endblock C2T61 %}
+        {% block C2T62 %}Background Colours{% endblock C2T62 %}
+        {% block C2T63 %}{% endblock C2T63 %}
+    
+    {% block section_03 %} {% endblock section_03 %}
+    {% block Category_03 %}Forms{% endblock Category_03 %}
+    {% block C3T1 %}Typography{% endblock C3T1 %}
+        {% block C3T11 %}Headings{% endblock C3T11 %}
+        {% block C3T12 %}Inline Text Elements{% endblock C3T12 %}
+        {% block C3T13 %}Formatting Tags{% endblock C3T13 %}
+        {% block C3T14 %}Abbreviations{% endblock C3T14 %}
+        {% block C3T15 %}Blockquotes{% endblock C3T15 %}
+        {% block C3T16 %}Lists{% endblock C3T16 %}
+        {% block C3T17 %}Text Utilities{% endblock C3T17 %}
+    {% block C3T2 %}Images{% endblock C3T2 %}
+        {% block C3T21 %}Regular Images{% endblock C3T21 %}
+        {% block C3T22 %}Portrait Images{% endblock C3T22 %}
+        {% block C3T23 %}Landscape Images{% endblock C3T23 %}
+    {% block C3T3 %}Tables{% endblock C3T3 %}
+        {% block C3T31 %}Regular Images{% endblock C3T31 %}
+        {% block C3T32 %}Portrait Images{% endblock C3T32 %}
+        {% block C3T33 %}Landscape Images{% endblock C3T33 %}
+    {% block C3T4 %}Figures{% endblock C3T4 %}
+        {% block C3T41 %}Regular Images{% endblock C3T41 %}
+        {% block C3T42 %}Portrait Images{% endblock C3T42 %}
+        {% block C3T43 %}Landscape Images{% endblock C3T43 %}
+    {% block C3T5 %}Forms{% endblock C3T5 %}
+        {% block C3T51 %}Regular Images{% endblock C3T51 %}
+        {% block C3T52 %}Portrait Images{% endblock C3T52 %}
+        {% block C3T53 %}Landscape Images{% endblock C3T53 %}
+    {% block C3T6 %}Add...{% endblock C3T6 %}
+        {% block C3T61 %}Regular Images{% endblock C3T61 %}
+        {% block C3T62 %}Portrait Images{% endblock C3T62 %}
+        {% block C3T63 %}Landscape Images{% endblock C3T63 %}
+   
+    {% block pageContent %} 
+        <div id="" 
+            class=""
+        >
+            {% block pageDescription %}
+            xx
+            {% endblock pageDescription %}
+        
+            
+            <div id="a_Typography" 
+                class="black-60"
+            >
+                <h2 id="">Typography</h2>
+
+                <div id="headings"
+                    class="bb mb1-00 "
+                >
+                    <h2 class="gold">Headings</h2>
+                    <div class="flex w-100 pb1-00 items-center"
+                    >
+                        <div class="w-80"
+                        >
+                            <h1 class="mr2-00">
+                                Main Title
+                            </h1>
+                        </div>
+                            <div class="flex flex-column items-start justify-start  
+                                w-20 "
+                            >
+                                Heading 1
+                        </div>    
+                    </div>
+
+                    <div class="flex w-100 pb1-00 items-center"
+                    >
+                        <div class="w-80"
+                        >
+                            <h2 class="mr2-00">
+                                Sub Titles
+                            </h2>
+                        </div>
+                            <div class="flex flex-column items-start justify-start  
+                                w-20 "
+                            >
+                                Heading 2
+                        </div>    
+                    </div>
+                    <div class="flex w-100 pb1-00 items-center"
+                    >
+                        <div class="w-80"
+                        >
+                            <h3 class="mr2-00">
+                                Sub Sub Titles
+                            </h3>
+                        </div>
+                            <div class="flex flex-column items-start justify-start  
+                                w-20 "
+                            >
+                                Heading 3
+                        </div>    
+                    </div>
+                </div>
+
+                <div id="paragraphs"
+                    class="bb mb1-00 "
+                >
+                    <h2 class="gold">Paragraphs</h2>
+                    <div class="flex w-100 pb1-00 "
+                    >
+                        <div class="w-80"
+                        >
+                            <p class="mr2-00">
+                                {% lorem 20 w random %}
+                            </p>
+                        </div>
+                            <div class="flex flex-column items-start justify-start  
+                                w-20 "
+                            >
+                                Paragraph 1
+                        </div>    
+                    </div>
+                    <div class="flex w-100 pb1-00 "
+                    >
+                        <div class="w-80"
+                        >
+                            <p class="mr2-00">
+                                {% lorem 20 w random %}
+                            </p>
+                        </div>
+                            <div class="flex flex-column items-start justify-start  
+                                w-20 "
+                            >
+                                Paragraph 2
+                        </div>    
+                    </div>
+                </div>
+
+                <div id="formattingTags"
+                    class=""
+                >
+                    <h2 class="gold">Formatting Tags</h2>
+
+                    <div class="flex items-center w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="w-80 flex flex-column items-start justify-center">
+                            <article class = ""> 
+                                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+                            </article> 
+                        </div>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Abbreviations 1
+                        </div>
+                    </div>
+
+                    <div class="flex items-center w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="w-80 flex flex-column">
+                            <blockquote class="mb1-00" cite="http://www.worldwildlife.org/who/index.html">
+                                "For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally."
+                            </blockquote>
+                        </div>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Blockquotes 1
+                        </div>
+                    </div>
+
+                    <div class="flex items-center w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="w-80 flex flex-column items-start justify-center">
+                            <address class="mb1-00">
+                                Written by: <a href="mailto:webmaster@example.com">Kwame Domfe Appau</a>.<br>
+                                Visit us at: www.kdadesign.tech<br>
+                                Box 564, Accra<br>
+                                Ghana
+                            </address>
+                        </div>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Address
+                        </div>
+                    </div>
+
+                    <table id=""
+                        class="ws-table-all notranslate"
+                    >
+                        <tbody>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;acronym&gt;</td>
+                                <td><span >Not supported in HTML5. Use &lt;abbr&gt; instead.<br></span>Defines an acronym</td>
+                            </tr>
+                            <tr>
+                                <td><a href="tag_abbr.asp">&lt;abbr&gt;</td>
+                                <td>Defines an abbreviation or an acronym</td>
+                            </tr>
+                            <tr>
+                                <td><a href="tag_address.asp">&lt;address&gt;</td>
+                                <td>Defines contact information for the author/owner of a document/article</td>
+                            </tr>
+                            <tr>
+                                <td><a href="tag_b.asp">&lt;b&gt;</td>
+                                <td>Defines bold text</td>
+                            </tr>
+                            <tr>
+                                <td><a href="tag_bdi.asp">&lt;bdi&gt;</td>
+                                <td>Isolates a part of text that might be formatted in a different direction from other text outside it</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_bdo.asp">&lt;bdo&gt;</td>
+                            <td>Overrides the current text direction</td>
+                            </tr>
+                            <tr>
+                            <td><a class="" href="tag_big.asp">&lt;big&gt;</td>
+                            <td><span >Not supported in HTML5. Use CSS instead.<br></span>Defines big text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_blockquote.asp">&lt;blockquote&gt;</td>
+                            <td>Defines a section that is quoted from another source</td>
+                            </tr>
+                            <tr>
+                            <td><a class="" href="tag_center.asp">&lt;center&gt;</td>
+                            <td><span >Not supported in HTML5. Use CSS instead.<br></span>Defines centered text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_cite.asp">&lt;cite&gt;</td>
+                            <td>Defines the title of a work</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_code.asp">&lt;code&gt;</td>
+                            <td>Defines a piece of computer code</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_del.asp">&lt;del&gt;</td>
+                            <td>Defines text that has been deleted from a document</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_dfn.asp">&lt;dfn&gt;</td>
+                            <td>Specifies a term that is going to be defined within the content</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_em.asp">&lt;em&gt;</td>
+                            <td>Defines emphasized text&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td><a class="" href="tag_font.asp">&lt;font&gt;</td>
+                            <td><span >Not supported in HTML5. Use CSS instead.<br></span>Defines font, color, and size for text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_i.asp">&lt;i&gt;</td>
+                            <td>Defines a part of text in an alternate voice or mood</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_ins.asp">&lt;ins&gt;</td>
+                            <td>Defines a text that has been inserted into a document</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_kbd.asp">&lt;kbd&gt;</td>
+                            <td>Defines keyboard input</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_mark.asp">&lt;mark&gt;</td>
+                            <td>Defines marked/highlighted text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_meter.asp">&lt;meter&gt;</td>
+                            <td>Defines a scalar measurement within a known range (a gauge)</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_pre.asp">&lt;pre&gt;</td>
+                            <td>Defines preformatted text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_progress.asp">&lt;progress&gt;</td>
+                            <td>Represents the progress of a task</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_q.asp">&lt;q&gt;</td>
+                            <td>Defines a short quotation</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_rp.asp">&lt;rp&gt;</td>
+                            <td>Defines what to show in browsers that do not support ruby annotations</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_rt.asp">&lt;rt&gt;</td>
+                            <td>Defines an explanation/pronunciation of characters (for East Asian 
+                            typography)</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_ruby.asp">&lt;ruby&gt;</td>
+                            <td>Defines a ruby annotation (for East Asian typography)</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_s.asp">&lt;s&gt;</td>
+                            <td>Defines text that is no longer correct</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_samp.asp">&lt;samp&gt;</td>
+                            <td>Defines sample output from a computer program</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_small.asp">&lt;small&gt;</td>
+                            <td>Defines smaller text</td>
+                            </tr>
+                            <tr>
+                            <td><a class="" href="tag_strike.asp">&lt;strike&gt;</td>
+                            <td><span >Not supported in HTML5. Use &lt;del&gt; or &lt;s&gt; instead.<br></span>Defines strikethrough text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_strong.asp">&lt;strong&gt;</td>
+                            <td>Defines important text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_sub.asp">&lt;sub&gt;</td>
+                            <td>Defines subscripted text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_sup.asp">&lt;sup&gt;</td>
+                            <td>Defines superscripted text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_template.asp">&lt;template&gt;</td>
+                            <td>Defines a container for content that should be hidden when the page loads</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_time.asp">&lt;time&gt;</td>
+                            <td>Defines a specific time (or datetime)</td>
+                            </tr>
+                            <tr>
+                            <td><a class="" href="tag_tt.asp">&lt;tt&gt;</td>
+                            <td><span >Not supported in HTML5. Use CSS instead.<br></span>Defines teletype text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_u.asp">&lt;u&gt;</td>
+                            <td>Defines some text that is unarticulated and styled differently from normal 
+                            text</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_var.asp">&lt;var&gt;</td>
+                            <td>Defines a variable</td>
+                            </tr>
+                            <tr>
+                            <td><a href="tag_wbr.asp">&lt;wbr&gt;</td>
+                            <td>Defines a possible line-break</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id=""
+                    class="flex w-100 pb1-00 mb1-00 bb"
+                >
+                    <div class="w-80 flex flex-column items-start justify-center">
+                        
+                    </div>
+
+                    <div class="w-20 flex flex-column items-start justify-start  
+                        "
+                    >
+                    Empty Slot
+                    </div>
+                </div> 
+            </div>
+            
+            <div id="a_images" 
+                class=""
+            >
+                <h2 class="gold">Images</h2>
+                
+                <div class="a_Image">
+
+                    <div id="bannerImages" 
+                            class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex flex-column ggap1-00 items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                alt="logo" 
+                                class="" 
+                            />
+                            <figure class="flex w-100 ggap1-00">
+                                <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                    alt="logo" 
+                                    class="w-50" 
+                                />
+                                <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                    alt="logo" 
+                                    class="w-50" 
+                                />
+
+                            </figure>
+                        </div>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                        Banner Image 1
+                        </div>
+                    </div>
+
+                    <div id="regularImages" 
+                            class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/placeholder/fpo_square.png' %}" 
+                                alt="logo" 
+                                class="w1-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_square.png' %}" 
+                                alt="logo" 
+                                class="w2-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_square.png' %}" 
+                                alt="logo" 
+                                class="w4-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_square.png' %}" 
+                                alt="logo" 
+                                class="w8-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_square.png' %}" 
+                                alt="logo" 
+                                class="w16-00" 
+                            />
+                        </div>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                        Regular Images
+                        </div>
+                    </div>
+
+                    <div id="avatarImages" 
+                            class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/placeholder/fpo_avatar.png' %}" 
+                                alt="logo" 
+                                class="w1-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_avatar.png' %}" 
+                                alt="logo" 
+                                class="w2-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_avatar.png' %}" 
+                                alt="logo" 
+                                class="w4-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_avatar.png' %}" 
+                                alt="logo" 
+                                class="w8-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_avatar.png' %}" 
+                                alt="logo" 
+                                class="w16-00" 
+                            />
+                        </ol>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                        Avatar Images
+                        </div>
+                    </div>
+
+                    <div id="landscapeImages" 
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div id="regular_images"
+                            class="w-80 flex justify-around items-center mb2-00"
+                        >
+                        <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                            alt="logo" 
+                            class="w1-00" 
+                        />
+                        <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                alt="logo" 
+                                class="w2-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                alt="logo" 
+                                class="w4-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                alt="logo" 
+                                class="w8-00" 
+                            />
+                            <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                alt="logo" 
+                                class="w16-00" 
+                            /> 
+                        </div>
+                    
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Landscape Images
+                        </div>
+                    </div>
+
+                    <div id="portraitImages" 
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/Portrait_Images/portraitImage_2.jpeg' %}" 
+                                alt="logo" 
+                                class="w1-00 " 
+                            />
+                            <img src = "{% static 'images/Portrait_Images/portraitImage_2.jpeg' %}" 
+                                alt="logo" 
+                                class="w2-00 " 
+                            />
+                            <img src = "{% static 'images/Portrait_Images/portraitImage_2.jpeg' %}" 
+                                alt="logo" 
+                                class="w4-00 " 
+                            />
+                            <img src = "{% static 'images/Portrait_Images/portraitImage_2.jpeg' %}" 
+                                alt="logo" 
+                                class="w8-00 " 
+                            />
+                            <img src = "{% static 'images/Portrait_Images/portraitImage_2.jpeg' %}" 
+                                alt="logo" 
+                                class="w16-00 " 
+                            />
+                        </ol>
+
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Portrait Images
+                        </div>
+                    </div>
+
+                    <div id="logoImages" 
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/Logo_Images/GDB_Logo--large.png' %}" 
+                                alt="logo" 
+                                class="w1-00 " 
+                            />
+                            <img src = "{% static 'images/Logo_Images/GDB_Logo--large.png' %}" 
+                                alt="logo" 
+                                class="w2-00 " 
+                            />
+                            <img src = "{% static 'images/Logo_Images/GDB_Logo--large.png' %}" 
+                                alt="logo" 
+                                class="w4-00 " 
+                            />
+                            <img src = "{% static 'images/Logo_Images/GDB_Logo--large.png' %}" 
+                                alt="logo" 
+                                class="w8-00 " 
+                            />
+                            <img src = "{% static 'images/Logo_Images/GDB_Logo--large.png' %}" 
+                                alt="logo" 
+                                class="w16-00 " 
+                            />
+                        </ol>
+
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Logos
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="gold">Scalable Vector Graphics (SVGs)</h2>
+                
+                <div class="svgs">
+
+                    <div id="svgs_menu_icons" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <img src="{% static 'svgs/menu-icon.svg' %}" 
+                                alt="menuToggleIcon" 
+                                class=" w2-50 
+                                    pa0-25" 
+                            />
+                            <img src="{% static 'svgs/menu-close-icon.svg' %}" 
+                                alt="menuToggleIcon" 
+                                class=" w2-50 
+                                    pa0-25" 
+                            />
+                        </ol>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Menu Icons
+                        </div>
+                    </div>
+
+                    <div id="svgs_socialMedia_icons" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <img src="{% static 'svgs/facebook.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w2-50 
+                                    pa0-25"
+                            />
+                            <img src="{% static 'svgs/twitter.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w2-50 
+                                    pa0-25"
+                            />
+                            <img src="{% static 'svgs/WhatsApp.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w2-50 
+                                    pa0-25"
+                            />
+                            <img src="{% static 'svgs/youtube.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w2-50 
+                                    pa0-25"
+                            />
+                        </ol>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Social Media Icons
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="gold">Media</h2>
+                
+                <div class="media">
+
+                    <div id="media_audio" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <audio controls>
+                                <source src="{% static 'audios/Bob Marley - No woman no cry.mp3' %}" 
+                                    type="audio/ogg">
+                                <source src="{% static 'audios/Bob Marley - No woman no cry.mp3' %}" 
+                                    type="audio/mpeg">
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </ol>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Audio
+                        </div>
+                    </div>
+
+                    <div id="media_video" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <video src="{% static 'videos\tesla.mp4' %}"
+                                class="w-100 "
+                                controls
+                            >
+                                
+                            </video>
+                        </ol>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Video
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="gold">Anchors</h2>
+                
+                <div class="anchor">
+
+                    <div id="anchor_1" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <a href = "javascript:void()"
+                                class=""
+                            >
+                                default
+                            </a>
+                            <a href="/discover/" class="gold">
+                                <h3 class="mb0-00 f1-00">DISCOVER</h3>
+                            </a>
+                            <li class=" pb0-25
+                                    mb2-00
+                                    mb0-00-m
+                                    bb bw1 b--gold" tabindex="0" title="Discover" aria-label="Other Courses"
+                            >
+                                <a href="/discover/" class="gold">
+                                    <h3 class="mb0-00 f1-00">DISCOVER</h3>
+                                </a>
+                            </li>
+                            <li class=" pa0-50
+                                    mb2-00
+                                    mb0-00-m bg-black-60 br0-25 ba b--gold
+                                    " tabindex="0" title="Enrol" aria-label="About Me"
+                            >
+                                <a href="/enrol/" class="shadow-4 white-90 ">
+                                    <h3 class="mb0-00 f1-00 ">ENROL</h3>
+                                </a>
+                            </li>
+                            <a href = "javascript:void()"
+                                class="br0-25 ph0-50 pv0-25 bg-black-60 white-90"
+                            >
+                                link
+                            </a>
+                            <a href = "javascript:void()"
+                                class="ba br0-25 ph0-50 pv0-25"
+                            >
+                                link
+                            </a>
+                            <a href = "javascript:void()"
+                                class="ba br0-25 ph0-50 pv0-25"
+                            >
+                                link
+                            </a>
+                            <a href = "javascript:void()"
+                                class="ba br0-25 ph0-50 pv0-25"
+                            >
+                                link
+                            </a>
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Anchor 1
+                        </div>
+                    </div>
+                    <div id="anchor_2" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <a href = "javascript:void()">link</a>
+                            <a href = "javascript:void()">link</a>
+                            <a href = "javascript:void()">link</a>
+                            <a href = "javascript:void()">link</a>
+                            <a href = "javascript:void()">link</a>
+                        </ol>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Anchor 2
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="gold">Tables</h2>
+
+                <div id=""
+                    class="flex w-100 pb1-00 mb1-00 bb"
+                >
+                    <div class="flex flex-column items-start justify-center
+                        w-80 "
+                    >
+                        
+                        <table id=""
+                        class="ba"
+                    >
+                        <thead class="ba">
+                            <tr >
+                                <th>id</th>
+                                <th>object</th>
+                            </tr>
+                        </thead>
+                        <tbody class="ba">
+                        
+                            <tr class="ba">
+                                <td>1</td>
+                                <td>List item 1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>List item 2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>List item 3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>List item 4</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <div class="w-20 flex flex-column items-start justify-start  
+                        "
+                    >
+                        Table 1
+                    </div>
+                </div> 
+
+                <div id=""
+                    class="flex w-100 pb1-00 mb1-00 bb"
+                >
+                    <div class="flex flex-column items-start justify-center
+                        w-80 "
+                    >
+                    <table id=""
+                        class="ba w-100"
+                    >
+                        <thead class="ba">
+                            <tr >
+                                <th class="w-20">Tag</th>
+                                <th class="w-80">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="ba">
+                        
+                            <tr class="ba">
+                                <td>&lt;acronym&gt;</td>
+                                <td><span >Not supported in HTML5. Use &lt;abbr&gt; instead.<br></span>Defines an acronym</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;abbr&gt;</td>
+                                <td>Defines an abbreviation or an acronym</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;address&gt;</td>
+                                <td>Defines contact information for the author/owner of a document/article</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;b&gt;</td>
+                                <td>Defines bold text</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <div class="w-20 flex flex-column items-start justify-start  
+                        "
+                    >
+                        Table 2
+                    </div>
+                </div> 
+
+                <div id="lists"
+                    class=""
+                >
+                    <h2 class="gold">Lists</h2>
+
+                    <div id="verticalList_1"
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="w-80 flex flex-column items-start justify-center">
+                            <ul>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            </ul>
+                        </div>
+        
+                        <div class="flex flex-column items-start justify-start  
+                            w-20"
+                        >
+                            Vertical Lists 1
+                        </div>
+                    </div>
+
+                    <div id="verticalList_2"
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="w-80 flex flex-column items-start justify-center">
+                            
+                            <nav class="w8-00">
+                                <ul id="asideMain" class="b pa1-00 bg-black-90 white-90 tl">
+                                    <li>
+                                        <a href="/library/" class="white-90">Library</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="white-90">Typography</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="white-90">Molecules</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="white-90">Organisms</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="white-90">Layouts</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="white-90">Pages</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+        
+                        <div class="flex flex-column items-start justify-start  
+                            w-20"
+                        >
+                            Vertical Lists 2
+                        </div>
+                    </div>
+                    
+                    <div id="verticalList_3"
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="w-80 flex flex-column items-start justify-center">
+                            
+                            <!-- Log Out User -->
+                            <div id="header-user"
+                                class="flex"
+                            >
+                                
+                                <!-- User Dropdown Menu -->
+                                <div id="dropdown-menu" 
+                                    class="flex flex-column flex-end justify-center
+                                        w10-00 bg-black-60 z5 pa0-50"
+                                >
+                                    <a href=""
+                                        class="flex items-center white-90 mb1-00"
+                                    >
+                                        <figure class="flex items-center justify-between"> 
+                                            <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                                alt="" 
+                                                class="w1-00 h1-00 
+                                                    mr0-75" 
+                                            />
+                                            <figcaption>  Dashboard </figcaption>
+                                        </figure>
+                                    
+                                    </a>
+                                    <a href=""
+                                        class="flex items-center white-90 mb1-00 "
+                                    >
+                                        <figure class="flex items-center justify-between"> 
+                                            <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                                alt="" 
+                                                class="w1-00 h1-00 
+                                                    mr0-75" 
+                                            />
+                                            <figcaption>  Settings </figcaption>
+                                        </figure>
+                                    
+                                    </a>
+        
+                                    <a href="{% url 'accounts:logout' %}"
+                                        class="flex items-center white-90"
+                                    >
+                                        <figure class="flex items-center justify-between"> 
+                                            <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                                alt="" 
+                                                class="w1-00 h1-00 
+                                                    mr0-75" 
+                                            />
+                                            <figcaption>  Logout </figcaption>
+                                        </figure>
+                                    
+                                    </a>
+                                </div>
+                                <!-- User Dropdown Menu -->
+                            </div>
+                            <!-- Log Out User -->
+                        </div>
+        
+                        <div class="flex flex-column items-start justify-start  
+                            w-20"
+                        >
+                            Vertical Lists 3
+                        </div>
+                    </div>
+
+                    <div id="horizontalList_1"
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="w-80 flex items-start justify-around">
+                            
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            
+                        </ol>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Horizontal Lists 1
+                        </div>
+                    </div>
+
+                    <div id="horizontalList_2" 
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ul id="m__navItems" 
+                            class=" flex-m flex-row-m items-center-m justify-between-m 
+                                    w16-00 vh-100  
+                                    w-80 h5-00-m
+                                    bg-black-60 f1-00
+                                    pt3-00 pt0-00-m
+                                    ph1-00 mb2-00
+                                    white-90
+                                    trans-x-100
+                                    trans-x-00-m"
+                        >
+                            <li class=" pb0-25 
+                                        mb2-00
+                                        mb0-00-m
+                                        " tabindex="0" title="style Guide" aria-label="style-guide">
+                                <a href="{% url 'website:style-guide' %}" class="white-90">
+                                        <h3 class="mb0-00 f1-00">style Guide</h3>
+                                </a>
+                            </li>
+                            <li class=" pb0-25 
+                                        mb2-00
+                                        mb0-00-m
+                                        " tabindex="0" title="Courses" aria-label="Revit Courses">
+                                <a href="{% url 'website:courses' %}" class="white-90">
+                                        <h3 class="mb0-00 f1-00">COURSES</h3>
+                                </a>
+                            </li>
+                            <li class=" pb0-25
+                                        mb2-00
+                                        mb0-00-m
+                                        bb bw1 b--gold" tabindex="0" title="Discover" aria-label="Other Courses">
+                                <a href="{% url 'website:discover' %}" class="white-90 gold">
+                                    <h3 class="mb0-00 f1-00">DISCOVER</h3>
+                                </a>
+                            </li>
+                            <li class=" pa0-50
+                                        mb2-00
+                                        mb0-00-m bg-black-60 br0-25 ba b--gold
+                                        " tabindex="0" title="Enrol" aria-label="About Me">
+                                <a href="{% url 'website:enrol' %}" class="shadow-4 white-90 ">
+                                    <h3 class="mb0-00 f1-00 ">ENROL</h3>
+                                </a>
+                            </li>
+                            <li class="
+                                    mb0-00" 
+                                    tabindex="0" 
+                                    title="Accounts" 
+                                    aria-label="Accounts"
+                            >
+                                    <!-- User Authentication -->
+                            
+                                
+                                    <!-- Log In User -->
+                                    <a href="{% url 'accounts:register' %}" 
+                                        class="flex
+                                            pv0-50 ph1-00
+                                            bg-gold white
+                                            br0-25
+                                            f1-00 ttu fw6
+                                            shadow-4"
+                                    >
+                                        <h3 class="mb0-00 f1-00">START</h3>
+                                    </a> 
+                                    <!-- Log In User -->
+                                <!-- User Authenthication -->
+                            </li>
+                            
+                            <li class="dn pb0-25
+                                        mb2-00
+                                        mb0-00-m" 
+                                tabindex="0"
+                                title="" 
+                                aria-label=""
+                            >
+                                <ul id="connect" 
+                                class="footerNav__Item flex dn-m w-100"
+                                >
+                                    <div 
+                                        class="flex justify-around items-center w-100
+                                            mb0-00-m"
+                                    >
+                                        <li class="mr0-75"> 
+                                            <a href="https://twitter.com/KwameDomfe" title="Follow me on Twitter" target="_blank" rel="noopener noreferrer">
+                                                <img src="{% static 'svgs/twitter.svg' %}" alt="" class="w1-25 blue0">
+                                            </a>
+                                        </li>
+                                        <li class="mr0-75"> 
+                                            <a href="https://web.facebook.com/KwameDomfeAppau/" title="Follow me on Facebook" target="_blank" rel="noopener noreferrer">
+                                                <img src="{% static 'svgs/facebook.svg' %}" alt="" class="w1-25">
+                                            </a>
+                                        </li>
+                                        <li class="mr0-75"> 
+                                            <a href="https://www.linkedin.com/in/kwame-domfe-appau-071ba61b" title="Connect with me on LinkedIn" target="_blank" rel="noopener noreferrer">
+                                                <img src="{% static 'svgs/linkedin.svg' %}" alt="" class="w1-25">
+                                            </a>
+                                            
+                                        </li>
+                                        <li class="mr0-75"> 
+                                            <a href="https://www.youtube.com/channel/UCAz9aBbC0Yzq25WmSPOIBjg" title="Follow me on youtube" target="_blank" rel="noopener noreferrer">
+                                                <img src="{% static 'svgs/youtube.svg' %}" alt="" class="w1-25">
+                                            </a>
+                                        </li>
+                                        <li class="mr0-75"> 
+                                            <a href="https://wa.me/233249282488?" title="Get In Touch on WhatsApp" target="_blank" rel="noopener noreferrer">
+                                                <img src="{% static 'svgs/WhatsApp.svg' %}" alt="" class="w1-25">
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li> 
+                        </ul>  
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Horizontal Lists 2
+                        </div>
+                    </div>
+
+                    <div id="horizontalList_3" 
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-start justify-around
+                            w-80 "
+                        >
+                            <li>
+                                <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                                    alt=""  
+                                    class=" cover"
+                                />
+                            </li>
+                            <li>
+                                <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                                    alt=""  
+                                    class=" cover"
+                                />
+                            </li>
+                            <li>
+                                <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                                    alt=""  
+                                    class=" cover"
+                                />
+                            </li>
+                        </ol>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Horizontal Lists 3
+                        </div>
+                    </div>
+
+                    <div id="horizontalList_4" 
+                        class="flex items-center w-100 pb1-00 mb1-00 bb"
+                    >
+                        <nav id="libraryNav" class="bg-black-50 z-5 w-80">
+                            <ul class="flex justify-between items-center 
+                                container90 
+                                h3-00 
+                                pa0-50 
+                                b white-90 bg-black-60"
+                            >
+                                <li>
+                                    <a href="/library/" class="white-90">Library</a>
+                                </li>
+                                <li>
+                                    <a href="/library/atoms/" class="white-90">Atoms</a>
+                                </li>
+                                <li>
+                                    <a href="/library/molecules/" class="white-90">Molecules</a>
+                                </li>
+                                <li>
+                                    <a href="/library/organisms/" class="white-90">Organisms</a>
+                                </li>
+                                <li>
+                                    <a href="/library/templates/" class="white-90">Layouts</a>
+                                </li>
+                                <li>
+                                    <a href="/library/pages/" class="white-90">Pages</a>
+                                </li>
+                            </ul>
+                    
+                        </nav>
+        
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Horizontal Lists 4
+                        </div>
+                    </div>
+
+                </div>
+                <div id="anchor_1" 
+                    class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                >
+                    <div class="flex items-center justify-around
+                        w-80 "
+                    >
+                        <a href = "javascript:void()"
+                            class=""
+                        >
+                            default
+                        </a>
+                        <a href="/discover/" class="gold">
+                            <h3 class="mb0-00 f1-00">DISCOVER</h3>
+                        </a>
+                        <li class=" pb0-25
+                                mb2-00
+                                mb0-00-m
+                                bb bw1 b--gold" tabindex="0" title="Discover" aria-label="Other Courses"
+                        >
+                            <a href="/discover/" class="gold">
+                                <h3 class="mb0-00 f1-00">DISCOVER</h3>
+                            </a>
+                        </li>
+                        <li class=" pa0-50
+                                mb2-00
+                                mb0-00-m bg-black-60 br0-25 ba b--gold
+                                " tabindex="0" title="Enrol" aria-label="About Me"
+                        >
+                            <a href="/enrol/" class="shadow-4 white-90 ">
+                                <h3 class="mb0-00 f1-00 ">ENROL</h3>
+                            </a>
+                        </li>
+                        <a href = "javascript:void()"
+                            class="br0-25 ph0-50 pv0-25 bg-black-60 white-90"
+                        >
+                            link
+                        </a>
+                        <a href = "javascript:void()"
+                            class="ba br0-25 ph0-50 pv0-25"
+                        >
+                            link
+                        </a>
+                        <a href = "javascript:void()"
+                            class="ba br0-25 ph0-50 pv0-25"
+                        >
+                            link
+                        </a>
+                        <a href = "javascript:void()"
+                            class="ba br0-25 ph0-50 pv0-25"
+                        >
+                            link
+                        </a>
+                    </div>
+
+                    <div class="flex flex-column items-start justify-start 
+                        w-20"
+                    >
+                        Anchor 1
+                    </div>
+                </div>
+                <h2 class="gold">Forms</h2>
+                
+                <div class=""
+                >
+
+                    <div id="textField" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <input type="text"
+                                placeholder="sample input text"
+                            />
+                        </ol>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Text Field
+                        </div>
+                    </div> 
+                    <div id="" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <input type="password"
+                                placeholder="password"
+                            />
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Password Field
+                        </div>
+                    </div>
+                    <div id="" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <input type="button"
+                                value="btn"
+                            />
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Button
+                        </div>
+                    </div>
+                    <div id="" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <textarea type="button"
+                                
+                            >
+                            </textarea>
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                        Text Area
+                        </div>
+                    </div>
+                    <div id="" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <select name="select" id="select">
+                                <optgroup>
+                                    <option value="A">A</option>
+                                    <option selected value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Select
+                        </div>
+                    </div>
+                    <div id="" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <input type="button"
+                                value="btn"
+                            />
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Button
+                        </div>
+                    </div>
+                    <div id="" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <input type="button"
+                                value="btn"
+                            />
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Button
+                        </div>
+                    </div>
+                    <div id="" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <div id="vertical_form"
+                                class="flex w-100 justify-between items-end mb2-00"
+                            >
+                                <form action="/action_page.php">
+                                    <fieldset>
+                                    <legend>Personalia:</legend>
+                                    <label for="fname">First name:</label>
+                                    <input type="text" id="fname" name="fname"><br><br>
+                                    <label for="lname">Last name:</label>
+                                    <input type="text" id="lname" name="lname"><br><br>
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email"><br><br>
+                                    <label for="birthday">Birthday:</label>
+                                    <input type="date" id="birthday" name="birthday"><br><br>
+                                    <input type="submit" value="Submit">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Vertical Form
+                        </div>
+                    </div>
+                    <div id="" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <div id="horizontal form"
+                                class="flex flex-column w-100 justify-between mb2-00"
+                            >
+                                <form id=""
+                                    action="/action_page.php" 
+                                    method="GET" 
+                                    class="flex"
+                                >
+                                    <label for="fname"
+                                        class="mr1-00"
+                                    >
+                                        First name:
+                                    </label>
+                                    <input id="fname" 
+                                        type="text" 
+                                        name="fname"
+                                        class="mr1-00"
+                                    /><br><br>
+                                    <label for="lname"
+                                        class="mr1-00"
+                                    >
+                                        Last name:
+                                    </label>
+                                    <input id="lname" 
+                                        type="text" 
+                                        name="lname"
+                                        class="mr1-00"
+                                    /><br><br>
+                                    <input 
+                                        type="submit" 
+                                        value="Submit"
+                                    />
+                                </form>
+                                
+                            </div> 
+                        </div>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Horizontal Form
+                        </div>
+                    </div>
+                </div>
+
+                <div id="form"
+                    class = "
+                    mb2-00
+                    bb bw1 "
+                >
+                    <table class="ws-table-all notranslate">
+                        <tbody>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;form&gt;</td>
+                                <td>Defines an HTML form for user input</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;input&gt;</td>
+                                <td>Defines an input control</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;textarea&gt;</td>
+                                <td>Defines a multiline input control (text area)</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;button&gt;</td>
+                                <td>Defines a clickable button</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;select&gt;</td>
+                                <td>Defines a drop-down list</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;optgroup&gt;</td>
+                                <td>Defines a group of related options in a drop-down list</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;option&gt;</td>
+                                <td>Defines an option in a drop-down list</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;label&gt;</td>
+                                <td>Defines a label&nbsp;for an &lt;input&gt; element</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;fieldset&gt;</td>
+                                <td>Groups related elements in a form</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;legend&gt;</td>
+                                <td>Defines a caption for a &lt;fieldset&gt; element</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;datalist&gt;</td>
+                                <td>Specifies a list of pre-defined options for input controls</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;output&gt;</td>
+                                <td>Defines the result of a calculation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="o_media" 
+                class=""
+            >
+                <h2 class="gold">Images</h2>
+                <div id="a_Images"
+                    class="">
+
+                    <div id="bannerImages" 
+                            class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex flex-column ggap1-00 items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                alt="Banner Image" 
+                                class="" 
+                            />
+                        </div>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                        Banner Image
+                        </div>
+                    </div>
+
+                    <div id="regularImages" 
+                            class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/placeholder/fpo_square.png' %}" 
+                                alt="logo" 
+                                class="w16-00" 
+                            />
+                        </div>
+        
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                        Regular Images
+                        </div>
+                    </div>
+
+                    <div id="avatarImages" 
+                            class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                            <div class="flex items-center justify-around
+                                w-80 "
+                            >
+                                <img src = "{% static 'images/placeholder/fpo_avatar.png' %}" 
+                                    alt="logo" 
+                                    class="w16-00" 
+                                />
+                            </div>
+                            <div class="w-20 flex items-start justify-start  
+                                "
+                            >
+                            Avatar Images
+                            </div>
+                    
+                    </div>
+
+                    <div id="landscapeImages" 
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div id=""
+                            class="w-80 flex justify-around items-center mb2-00"
+                        >
+                            <img src = "{% static 'images/placeholder/fpo_hero.png' %}" 
+                                alt="logo" 
+                                class="w16-00" 
+                            /> 
+                        </div>
+                    
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Landscape Images
+                        </div>
+                    </div>
+
+                    <div id="portraitImages" 
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/Portrait_Images/portraitImage_2.jpeg' %}" 
+                                alt="logo" 
+                                class="w16-00 " 
+                            />
+                        </div>
+
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Portrait Images
+                        </div>
+                    </div>
+
+                    <div id="logoImages" 
+                        class="flex w-100 pb1-00 mb1-00 bb"
+                    >
+                        <div class="flex items-center justify-around
+                            w-80 "
+                        >
+                            <img src = "{% static 'images/Logo_Images/GDB_Logo--large.png' %}" 
+                                alt="logo" 
+                                class="w16-00 " 
+                            />
+                        </div>
+
+                        <div class="w-20 flex flex-column items-start justify-start  
+                            "
+                        >
+                            Logos
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="gold">Scalable Vector Graphics (SVGs)</h2>
+                <div class="svgs">
+
+                    <div id="svgs_menu_icons" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <img src="{% static 'svgs/menu-icon.svg' %}" 
+                                alt="menuToggleIcon" 
+                                class=" w2-50 
+                                    pa0-25" 
+                            />
+                            <img src="{% static 'svgs/menu-close-icon.svg' %}" 
+                                alt="menuToggleIcon" 
+                                class=" w2-50 
+                                    pa0-25" 
+                            />
+                        </ol>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Menu Icons
+                        </div>
+                    </div>
+
+                    <div id="svgs_socialMedia_icons" 
+                        class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                    >
+                        <ol class="flex items-center justify-start
+                            w-80 "
+                        >
+                            <img src="{% static 'svgs/facebook.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w2-50 
+                                    pa0-25"
+                            />
+                            <img src="{% static 'svgs/twitter.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w2-50 
+                                    pa0-25"
+                            />
+                            <img src="{% static 'svgs/WhatsApp.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w2-50 
+                                    pa0-25"
+                            />
+                            <img src="{% static 'svgs/youtube.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w2-50 
+                                    pa0-25"
+                            />
+                        </ol>
+
+                        <div class="flex flex-column items-start justify-start 
+                            w-20"
+                        >
+                            Social Media Icons
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="gold">Audio</h2>
+                <div id="media_audio" 
+                    class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                >
+                    <ol class="flex items-center justify-start
+                        w-80 "
+                    >
+                        <audio controls>
+                            <source src="{% static 'audios/Bob_Marley_No_woman_no_cry.mp3' %}" 
+                                type="audio/ogg">
+                            <source src="{% static 'audios/Bob_Marley_No_woman_no_cry.mp3' %}" 
+                                type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
+                    </ol>
+
+                    <div class="flex flex-column items-start justify-start 
+                        w-20"
+                    >
+                        Audio
+                    </div>
+                </div>
+
+                <h2 class="gold">Video</h2>
+                <div id="media_video" 
+                    class="flex justify-between w-100 pb1-00 mb1-00 bb"
+                >
+                    <ol class="flex items-center justify-start
+                        w-80 "
+                    >
+                        <video src="{% static 'videos\tesla.mp4' %}"
+                            class="w-100 "
+                            controls
+                        >
+                            
+                        </video>
+                    </ol>
+
+                    <div class="flex flex-column items-start justify-start 
+                        w-20"
+                    >
+                        Video
+                    </div>
+                </div>
+            </div>
+            <div id="avatarImages" 
+                class="flex w-100 pb1-00 mb1-00 bb"
+            >
+                <div class="flex items-center justify-around
+                    w-80 "
+                >
+                    <img src = "{% static 'images/placeholder/fpo_avatar.png' %}" 
+                        alt="logo" 
+                        class="w16-00" 
+                    />
+                </div>
+                <div class="w-20 flex items-start justify-start  
+                    "
+                >
+                Avatar Images
+                </div>
+            
+            </div>
+            </div>
+
+            <div id="verticalList_2"
+                class="flex w-100 pb1-00 mb1-00 bb"
+            >
+                <div class="w-80 flex flex-column items-start justify-center">
+                    
+                    <nav class="w8-00">
+                        <ul id="asideMain" class="b pa1-00 bg-black-90 white-90 tl">
+                            <li>
+                                <a href="/library/" class="white-90">Library</a>
+                            </li>
+                            <li>
+                                <a href="" class="white-90">Typography</a>
+                            </li>
+                            <li>
+                                <a href="" class="white-90">Molecules</a>
+                            </li>
+                            <li>
+                                <a href="" class="white-90">Organisms</a>
+                            </li>
+                            <li>
+                                <a href="" class="white-90">Layouts</a>
+                            </li>
+                            <li>
+                                <a href="" class="white-90">Pages</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="flex flex-column items-start justify-start  
+                    w-20"
+                >
+                    Vertical Lists 2
+                </div>
+            </div>
+            
+            <div id="verticalList_3"
+                class="flex w-100 pb1-00 mb1-00 bb"
+            >
+                <div class="w-80 flex flex-column items-start justify-center">
+                    
+                    <!-- Log Out User -->
+                    <div id="header-user"
+                        class="flex"
+                    >
+                        
+                        <!-- User Dropdown Menu -->
+                        <div id="dropdown-menu" 
+                            class="flex flex-column flex-end justify-center
+                                w10-00 bg-black-60 z5 pa0-50"
+                        >
+                            <a href=""
+                                class="flex items-center white-90 mb1-00"
+                            >
+                                <figure class="flex items-center justify-between"> 
+                                    <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                        alt="" 
+                                        class="w1-00 h1-00 
+                                            mr0-75" 
+                                    />
+                                    <figcaption>  Dashboard </figcaption>
+                                </figure>
+                            
+                            </a>
+                            <a href=""
+                                class="flex items-center white-90 mb1-00 "
+                            >
+                                <figure class="flex items-center justify-between"> 
+                                    <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                        alt="" 
+                                        class="w1-00 h1-00 
+                                            mr0-75" 
+                                    />
+                                    <figcaption>  Settings </figcaption>
+                                </figure>
+                            
+                            </a>
+
+                            <a href="{% url 'accounts:logout' %}"
+                                class="flex items-center white-90"
+                            >
+                                <figure class="flex items-center justify-between"> 
+                                    <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                        alt="" 
+                                        class="w1-00 h1-00 
+                                            mr0-75" 
+                                    />
+                                    <figcaption>  Logout </figcaption>
+                                </figure>
+                            
+                            </a>
+                        </div>
+                        <!-- User Dropdown Menu -->
+                    </div>
+                    <!-- Log Out User -->
+                </div>
+
+                <div class="flex flex-column items-start justify-start  
+                    w-20"
+                >
+                    Vertical Lists 3
+                </div>
+            </div>
+            <div id="horizontalList_2" 
+                class="flex w-100 pb1-00 mb1-00 bb"
+            >
+                <ul id="m__navItems" 
+                    class=" flex-m flex-row-m items-center-m justify-between-m 
+                            w16-00 vh-100  
+                            w-80 h5-00-m
+                            bg-black-60 f1-00
+                            pt3-00 pt0-00-m
+                            ph1-00 mb2-00
+                            white-90
+                            trans-x-100
+                            trans-x-00-m"
+                >
+                    <li class=" pb0-25 
+                                mb2-00
+                                mb0-00-m
+                                " tabindex="0" title="style Guide" aria-label="style-guide">
+                        <a href="{% url 'website:style-guide' %}" class="white-90">
+                                <h3 class="mb0-00 f1-00">LIBRARY</h3>
+                        </a>
+                    </li>
+                    <li class=" pb0-25 
+                                mb2-00
+                                mb0-00-m
+                                " tabindex="0" title="Courses" aria-label="Revit Courses">
+                        <a href="{% url 'website:courses' %}" class="white-90">
+                                <h3 class="mb0-00 f1-00">COURSES</h3>
+                        </a>
+                    </li>
+                    <li class=" pb0-25
+                                mb2-00
+                                mb0-00-m
+                                bb bw1 b--gold" tabindex="0" title="Discover" aria-label="Other Courses">
+                        <a href="{% url 'website:discover' %}" class="white-90 gold">
+                            <h3 class="mb0-00 f1-00">DISCOVER</h3>
+                        </a>
+                    </li>
+                    <li class=" pa0-50
+                                mb2-00
+                                mb0-00-m bg-black-60 br0-25 ba b--gold
+                                " tabindex="0" title="Enrol" aria-label="About Me">
+                        <a href="{% url 'website:enrol' %}" class="shadow-4 white-90 ">
+                            <h3 class="mb0-00 f1-00 ">ENROL</h3>
+                        </a>
+                    </li>
+                    <li class="
+                            mb0-00" 
+                            tabindex="0" 
+                            title="Accounts" 
+                            aria-label="Accounts"
+                    >
+                            <!-- User Authentication -->
+                    
+                        
+                            <!-- Log In User -->
+                            <a href="{% url 'accounts:register' %}" 
+                                class="flex
+                                    pv0-50 ph1-00
+                                    bg-gold white
+                                    br0-25
+                                    f1-00 ttu fw6
+                                    shadow-4"
+                            >
+                                <h3 class="mb0-00 f1-00">START</h3>
+                            </a> 
+                            <!-- Log In User -->
+                        <!-- User Authenthication -->
+                    </li>
+                    
+                    <li class="dn pb0-25
+                                mb2-00
+                                mb0-00-m" 
+                        tabindex="0"
+                        title="" 
+                        aria-label=""
+                    >
+                        <ul id="connect" 
+                        class="footerNav__Item flex dn-m w-100"
+                        >
+                            <div 
+                                class="flex justify-around items-center w-100
+                                    mb0-00-m"
+                            >
+                                <li class="mr0-75"> 
+                                    <a href="https://twitter.com/KwameDomfe" title="Follow me on Twitter" target="_blank" rel="noopener noreferrer">
+                                        <img src="{% static 'svgs/twitter.svg' %}" alt="" class="w1-25 blue0">
+                                    </a>
+                                </li>
+                                <li class="mr0-75"> 
+                                    <a href="https://web.facebook.com/KwameDomfeAppau/" title="Follow me on Facebook" target="_blank" rel="noopener noreferrer">
+                                        <img src="{% static 'svgs/facebook.svg' %}" alt="" class="w1-25">
+                                    </a>
+                                </li>
+                                <li class="mr0-75"> 
+                                    <a href="https://www.linkedin.com/in/kwame-domfe-appau-071ba61b" title="Connect with me on LinkedIn" target="_blank" rel="noopener noreferrer">
+                                        <img src="{% static 'svgs/linkedin.svg' %}" alt="" class="w1-25">
+                                    </a>
+                                    
+                                </li>
+                                <li class="mr0-75"> 
+                                    <a href="https://www.youtube.com/channel/UCAz9aBbC0Yzq25WmSPOIBjg" title="Follow me on youtube" target="_blank" rel="noopener noreferrer">
+                                        <img src="{% static 'svgs/youtube.svg' %}" alt="" class="w1-25">
+                                    </a>
+                                </li>
+                                <li class="mr0-75"> 
+                                    <a href="https://wa.me/233249282488?" title="Get In Touch on WhatsApp" target="_blank" rel="noopener noreferrer">
+                                        <img src="{% static 'svgs/WhatsApp.svg' %}" alt="" class="w1-25">
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li> 
+                </ul>  
+
+                <div class="w-20 flex flex-column items-start justify-start  
+                    "
+                >
+                    Horizontal Lists 2
+                </div>
+            </div>
+
+            <div id="horizontalList_3" 
+                class="flex w-100 pb1-00 mb1-00 bb"
+            >
+                <ol class="flex items-start justify-around
+                    w-80 "
+                >
+                    <li>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt=""  
+                            class=" cover"
+                        />
+                    </li>
+                    <li>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt=""  
+                            class=" cover"
+                        />
+                    </li>
+                    <li>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt=""  
+                            class=" cover"
+                        />
+                    </li>
+                </ol>
+
+                <div class="w-20 flex flex-column items-start justify-start  
+                    "
+                >
+                    Horizontal Lists 3
+                </div>
+            </div>
+
+            <div id="horizontalList_4" 
+                class="flex items-center w-100 pb1-00 mb1-00 bb"
+            >
+                <nav id="libraryNav" class="bg-black-50 z-5 w-80">
+                    <ul class="flex justify-between items-center 
+                        container90 
+                        h3-00 
+                        pa0-50 
+                        b white-90 bg-black-60"
+                    >
+                        <li>
+                            <a href="/library/" class="white-90">Library</a>
+                        </li>
+                        <li>
+                            <a href="/library/atoms/" class="white-90">Atoms</a>
+                        </li>
+                        <li>
+                            <a href="/library/molecules/" class="white-90">Molecules</a>
+                        </li>
+                        <li>
+                            <a href="/library/organisms/" class="white-90">Organisms</a>
+                        </li>
+                        <li>
+                            <a href="/library/templates/" class="white-90">Layouts</a>
+                        </li>
+                        <li>
+                            <a href="/library/pages/" class="white-90">Pages</a>
+                        </li>
+                    </ul>
+            
+                </nav>
+
+
+                <div class="w-20 flex flex-column items-start justify-start  
+                    "
+                >
+                    Horizontal Lists 4
+                </div>
+            </div>
+    {% endblock pageContent %}
+
+    <footer id="asideFooter"
+        class="pa1-00"
+    >
+        Aside Footer
+    </footer>
+   
+</div>

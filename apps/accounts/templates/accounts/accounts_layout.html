@@ -1,0 +1,24 @@
+{% extends 'base_layout2.html' %}
+{% load static %}
+{% block content %}
+    <div class="flex flex-column flex-row-m w-100 min-vh-90-m">
+        <!-- Authenthication Form Start --> 
+        <div class="flex items-center justify-center 
+            w-100 w-50-m bg-black-60 white-90"
+        >
+            {% block authenthicationForm %}
+                {% include 'accounts/loginAuth.html' %}
+            {% endblock authenthicationForm %} 
+        </div> 
+        <!-- Authenthication Form End --> 
+        <!-- Authenthication Banner Start --> 
+        <div class="flex items-center justify-center 
+            w-100 w-50-m bg-white-90"
+            > 
+            {% block authenthicationBanner %}    
+                {% include 'accounts/accountsBanner_01.html' %}
+            {% endblock authenthicationBanner %} 
+        </div>
+        <!-- Authenthication Banner End --> 
+    </div>
+{% endblock content %}

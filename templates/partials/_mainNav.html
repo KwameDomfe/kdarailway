@@ -1,0 +1,260 @@
+{% load static %}
+<nav id="o__mainHeader"
+    class="h5-00
+        z-2"   
+>
+    <!-- 00.00   HEADER SECTION -->
+    <header id="">
+        <section id="navBlock" 
+            class="flex justify-center items-center
+                w-100 
+                bg-white 
+                fixed
+                z-5"
+        >
+            <nav id="m__primaryNav" 
+                class="flex justify-between items-center container90
+                   "
+            >   
+                <div id="m__kda--Logo" 
+                    class="w-50-m" 
+                    tabindex="0" 
+                    title="Kwame Domfe Appau's Logo" 
+                    aria-label="Kwame Domfe Appau's Logo"
+                >
+                    <a href="{% url 'website:index' %}">
+                        <figure class="flex items-center justify-start"   
+                        >   
+                            <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                    alt="Geolo Logo" 
+                                    class=" w4-00 h4-00
+                                            br-100"
+                            />
+                            <figcaption class=" flex flex-column items-center justify-center  
+                                                ml1-00
+                                                w14-00
+                                                black-60">
+                                <h2 class="mb0-50 f1-00 tracked">
+                                    KWAME DOMFE APPAU
+                                </h2> 
+                                <h3 class="flex justify-center items-center f0-75 mb0-00 tracked-tight">
+                                    Designer || Programmer || Developer
+                                </h3>
+                            </figcaption>
+                        </figure>   
+                    </a>
+                </div>         
+                <div id="m__menuToggle" 
+                    class=" flex items-center justify-center 
+                            dn-m
+                            pointer"
+                >
+                    <figure class=" flex items-center justify-center 
+                                w2-50 h2-50
+                                bg-white-90 
+                                br5-00
+                                ba bw1 b--gold-10">
+                        <img src="{% static 'svgs/menu-icon.svg' %}" 
+                            alt="menuToggleIcon" 
+                            class=" w-90 
+                                    pa0-25
+                        " />
+                    </figure>
+                </div>
+                <ul id="m__navItems" 
+                    class=" dn 
+                            flex-m flex-row-m items-center-m justify-between-m 
+                            w16-00 vh-100  
+                            w-50-m h5-00-m
+                            bg-black-60 f1-00
+                            pt3-00 pt0-00-m
+                            ph1-00
+                            white-90 
+                            trans-x-100
+                            trans-x-00-m"
+                >
+                    <li class=" pb0-25 
+                                mb2-00
+                                mb0-00-m
+                               " tabindex="0" title="Courses" aria-label="Revit Courses">
+                        <a href="{% url 'website:courses' %}" class="white-90">
+                             <h3 class="mb0-00 f1-00">COURSES</h3>
+                        </a>
+                    </li>
+                    <li class=" pb0-25
+                                mb2-00
+                                mb0-00-m
+                                bb bw1 b--gold" tabindex="0" title="Discover" aria-label="Other Courses">
+                        <a href="{% url 'website:discover' %}" class="white-90 gold">
+                            <h3 class="mb0-00 f1-00">DISCOVER</h3>
+                        </a>
+                    </li>
+                    <li class=" pa0-25
+                                mb2-00
+                                mb0-00-m bg-black-60 br0-25 ba b--gold
+                                " tabindex="0" title="Enrol" aria-label="About Me">
+                        <a href="{% url 'website:enrol' %}" class="shadow-4 white-90 ">
+                            <h3 class="mb0-00 f1-00 ">ENROL</h3>
+                        </a>
+                    </li>
+                    <li class="
+                            mb0-00" 
+                            tabindex="0" 
+                            title="Start" 
+                            aria-label="About Me"
+                    >
+                         <!-- User Authentication -->
+                        {% if request.user.is_authenticated %}
+                            <!-- Loggen Out User -->
+                            <div id="header-user"
+                                class="flex"
+                            >
+                                <a  href="{% url 'accounts:logout' %}"
+                                    
+                                >
+                                    <figure class="flex items-center
+                                        pv0-25 ph0-50
+                                        white-90
+                                        " >
+                                        <img src="{% static 'images/placeholder/fpo_avatar.png' %}" 
+                                            alt="" 
+                                            class="w2-00 br0-25 mr1-00"
+                                        />
+                                        <figcaption>
+                                        <p class="mb0-00">{{request.user.username}}  </p>
+                                        <span class="f0-75">@ {{request.user.email}}</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                                <button id="dropdown-button"
+                                    class="f2-00 bg-transparent b--none gold">  
+                                    &triangledown;  <!--replace with svg -->
+                                </button>
+                                <!-- User Dropdown Menu -->
+                                <div id="dropdown-menu" 
+                                    class=" dn 
+                                        w14-00 bg-black-60 mt4-50 z5 absolute pa1-00 ml0-50"
+                                >
+                                    <a href=""
+                                        class="flex items-center white-90 pa0-50"
+                                    >
+                                        <figure class="flex items-center justify-between"> 
+                                            <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                                alt="" 
+                                                class="w1-00 h1-00 
+                                                    mr0-75" 
+                                            />
+                                            <figcaption>  Dashboard </figcaption>
+                                        </figure>
+                                    
+                                    </a>
+                                    <a href=""
+                                        class="flex items-center white-90 pa0-50"
+                                    >
+                                        <figure class="flex items-center justify-between"> 
+                                            <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                                alt="" 
+                                                class="w1-00 h1-00 
+                                                    mr0-75" 
+                                            />
+                                            <figcaption>  Settings </figcaption>
+                                        </figure>
+                                    
+                                    </a>
+
+                                    <a href="{% url 'accounts:logout' %}"
+                                        class="flex items-center white-90 pa0-50"
+                                    >
+                                        <figure class="flex items-center justify-between"> 
+                                            <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                                alt="" 
+                                                class="w1-00 h1-00 
+                                                    mr0-75" 
+                                            />
+                                            <figcaption>  Logout </figcaption>
+                                        </figure>
+                                    
+                                    </a>
+                                </div>
+                                <!-- User Dropdown Menu -->
+                            </div>
+                            <!-- Loggen Out User --> 
+                        {% else %}
+                            <!-- Login In User -->
+                            <a href="{% url 'accounts:register' %}" 
+                                class="flex
+                                    pv0-50 ph1-00
+                                    bg-gold white
+                                    br0-25
+                                    f1-00 ttu fw7
+                                    shadow-4"
+                            >
+                                START
+                            </a> 
+                            <!-- Logged In User -->
+                        {% endif %}
+                        <!-- User Authenthication -->
+                    </li>
+                   
+                    <li class="dn pb0-25
+                                mb2-00
+                                mb0-00-m" 
+                        tabindex="0"
+                        title="" 
+                        aria-label=""
+                    >
+                        <div class="footerNav__Item flex dn-m w-100"
+                        >
+                            <ul id="connect" 
+                                class="flex justify-around items-center w-100
+                                    mb0-00-m"
+                            >
+                                <li class="mr0-75"> 
+                                    <a href="https://twitter.com/KwameDomfe" 
+                                        title="Follow me on Twitter" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img src="{% static 'svgs/twitter.svg' %}" 
+                                            alt="" 
+                                            class="w1-25 blue0"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="mr0-75"> 
+                                    <a href="https://web.facebook.com/KwameDomfeAppau/" 
+                                        title="Follow me on Facebook" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img src="{% static 'svgs/facebook.svg' %}" 
+                                            alt="" 
+                                            class="w1-25"
+                                        >
+                                    </a>
+                                </li>
+                                <li class="mr0-75"> 
+                                    <a href="https://www.linkedin.com/in/kwame-domfe-appau-071ba61b" title="Connect with me on LinkedIn" target="_blank" rel="noopener noreferrer">
+                                        <img src="{% static 'svgs/linkedin.svg' %}" alt="" class="w1-25">
+                                    </a>
+                                    
+                                </li>
+                                <li class="mr0-75"> 
+                                    <a href="https://www.youtube.com/channel/UCAz9aBbC0Yzq25WmSPOIBjg" title="Follow me on youtube" target="_blank" rel="noopener noreferrer">
+                                        <img src="{% static 'svgs/youtube.svg' %}" alt="" class="w1-25">
+                                    </a>
+                                </li>
+                                <li class="mr0-75"> 
+                                    <a href="https://wa.me/233249282488?" title="Get In Touch on WhatsApp" target="_blank" rel="noopener noreferrer">
+                                        <img src="{% static 'svgs/WhatsApp.svg' %}" alt="" class="w1-25">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> 
+                </ul>    
+            </nav>
+        </section>
+    </header>
+    <!-- 00.00   HEADER SECTION -->
+</nav>

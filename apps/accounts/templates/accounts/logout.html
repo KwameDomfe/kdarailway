@@ -1,0 +1,13 @@
+{% extends 'accounts/accounts_layout.html' %}
+{% load static %}
+{% block 'content' %}
+{% block accounts %}
+    {% block authenthicationForm %}
+        {% include 'accounts/logoutAuth.html' %}
+    {% endblock authenthicationForm %} 
+
+    {% block authenthicationBanner %}    
+        {% include 'accounts/accountsBanner_01.html' %}
+    {% endblock authenthicationBanner %} 
+{% endblock accounts %}
+{% endblock 'content' %}

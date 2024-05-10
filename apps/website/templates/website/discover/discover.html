@@ -1,0 +1,222 @@
+{% extends 'base_layout3.html' %}
+
+{% load static %}
+
+{% block title %} discover {% endblock title %}
+
+{% block content %}
+
+    {% comment %} <div class="fixed bg-black-50 z-5 w-100">
+        {% include '_partials/discover_nav.html' %}
+    </div> {% endcomment %}
+
+    <div class="grid gtc12 container90"
+    > 
+        <div id="discover"
+            class="gc7s6 gr1s1 grid container"
+        >
+         
+            <header id="" 
+                class="flex justify-center items-center 
+                "
+            >
+                <div class="w-100"
+                >
+                    <figure class="flex items-center justify-center
+                        vh-50"
+                    >
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" alt="" 
+                            class="cover h-100"
+                            />
+                    </figure>  
+                        
+                    <hgroup class="gc1s12 tc mv2-00">
+                            <h2>Discover</h2>
+                    </hgroup>    
+                </div>
+            </header>
+
+            <main>
+                <section class="grid gtc12 bg-black-10 ggap2-00 pa1-00"
+                >
+                    <article id="discover__faqs"
+                        class="gc1s6 mv2-00 w-100"
+                    >
+                        <header>
+                            <hgroup>
+                                <h2>Frequently Asked Questions</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. culpa in pariatur commodi! Deleniti, tempore. </p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'website:faqs' %}">CTA</a>
+                        </footer>
+                    </article>
+                    <article id="discover__financingOptions"
+                        class="mv2-00 gc7s6 w-100"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Financing Options</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor,  libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'website:finance' %}">CTA</a>
+                        </footer>
+                    </article>
+                    <article id="discover__blog" 
+                        class="mv2-00 gc1s6 w-100"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Blog</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor,  libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="javascript:void">CTA</a>
+                        </footer>
+                    </article>
+                    <article  id="discover__download"
+                        class="mv2-00 gc7s6 w-100"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Download</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor,  libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'website:download' %}">CTA</a>
+                        </footer>
+                    </article>
+                    <article id="discover__contactMe" 
+                        class="mv2-00  gc1s6 w-100"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Contact Me</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'website:contact-me' %}">CTA</a>
+                        </footer>
+                    </article>
+                    <article id="discover__styleGuide"
+                        class="mv2-00  gc7s6 w-100"
+                    >
+                        <header>
+                            <hgroup class="flex">
+                                <h2>Style Guide</h2>
+                            </hgroup>
+                        </header>
+                        <main>
+                            <p>Lorem ipsum dolor, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                        </main>
+                        <footer>
+                            <a href="{% url 'website:style-guide' %}">CTA</a>
+                        </footer>
+                    </article>
+                </section>
+            </main>
+            
+            <footer id="" 
+                class="bg-black-90 pa1-00 white-90 mb3-00"
+            >
+                put a page footer
+            </footer>
+           
+        </div>
+
+        <div class="gc1s6 gr1s1"
+        >
+            <div class="flex justify-end 
+                mb3-00 ph1-00
+                sticky top-5 
+                vh-90 
+                bg-black-60"
+            >
+                <div class="flex flex-column justify-between items-end  
+                    w-50 h-100
+                    white-90 tj"
+                >	
+                    <div class="flex justify-start w-100 f0-75 pv1-00">
+                        <span>
+                        
+                            Discover
+                        </span>
+                    </div>
+                    <div class="flex flex-column justify-between items-center   
+                        
+                        pt3-00 
+                        white-90
+                        tj"
+                    >	
+                        <hgroup class="tc tl-m w-100 mb1-00"
+                        >
+                            {% comment %} <p class="f0-75 mv0-00">
+                                discover
+                            </p> {% endcomment %}
+                            <h2 class="f1-50 mv0-00 pb1-00">
+                                Discover
+                            </h2>
+                        </hgroup>
+                        <p class="mb0-00 f1-25 f1-50-s f1-00-l w-100
+                                "
+                        >
+                            {% lorem 20 w random %}
+                        </p>
+                        <ul class="dib flex flex-column justify-start mv4-00 w-100 b">
+                            <li class="mb0-50">
+                                <a href="#discover__faqs"
+                                    class="gold">FAQ's
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#discover__contactMe"
+                                    class="gold">Contact Me
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#discover__download"
+                                    class="gold">Download
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#discover__styleGuide"
+                                    class="gold">Style Guide
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="#discover__financingOptions"
+                                    class="gold">Financing Options
+                                </a>
+                            </li>
+                            <li class="mb0-50">
+                                <a href="javascript:void()"
+                                    class="gold">Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+
+        <div class="gc1s12">
+            {% include 'partials/_mainFooter.html' %}
+        </div> 
+    </div>
+{% endblock %}    

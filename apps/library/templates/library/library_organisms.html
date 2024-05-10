@@ -1,0 +1,670 @@
+{% extends 'library/library.html' %}
+{% load static %}
+
+{% block title %} Organisms {% endblock title %}
+
+
+{% block pageTitle %} Organisms {% endblock pageTitle %}
+{% block pageT %}Organisms are something special{% endblock pageT %}
+
+<div 
+    class=" flex w-100 h-100 "
+>
+
+    {% block pageContent %} 
+    <div id="" 
+        class="bg-black"
+    >
+        <h2>Primary Navigation</h2>
+        <nav id="m__primaryNav" 
+            class="flex justify-between items-center 
+                container90
+                bg-white"
+        >   
+            <div id="m__kda--Logo" 
+                class="w-50-m" 
+                tabindex="0" 
+                title="Kwame Domfe Appau's Logo" 
+                aria-label="Kwame Domfe Appau's Logo"
+            >
+                <a href="{% url 'website:index' %}">
+                    <figure class="flex items-center justify-start"   
+                    >   
+                        <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                alt="Geolo Logo" 
+                                class=" w4-00 h4-00
+                                        br-100"
+                        />
+                        <figcaption class=" flex flex-column items-center justify-center  
+                                            ml1-00
+                                            w14-00
+                                            black-60">
+                            <h2 class="mb0-50 f1-00 tracked">
+                                KWAME DOMFE APPAU
+                            </h2> 
+                            <h3 class="flex justify-center items-center f0-50 mb0-00 tracked">
+                                designer || programmer || developer
+                            </h3>
+                        </figcaption>
+                    </figure>   
+                </a>
+            </div>         
+            <div id="m__menuToggle" 
+                class=" flex items-center justify-center 
+                        dn-m
+                        pointer"
+            >
+                <figure class=" flex items-center justify-center 
+                            w2-50 h2-50
+                            bg-white-90 
+                            br5-00
+                            ba bw1 b--gold-10">
+                    <img src="{% static 'svgs/menu-icon.svg' %}" 
+                        alt="menuToggleIcon" 
+                        class=" w-90 
+                                pa0-25
+                    " />
+                </figure>
+            </div>
+            <ul id="m__navItems" 
+                class=" dn 
+                        flex-m flex-row-m items-center-m justify-between-m 
+                        w16-00 vh-100  
+                        w-50-m h5-00-m
+                        bg-black-60 f1-00
+                        pt3-00 pt0-00-m
+                        ph1-00
+                        white-90
+                        trans-x-100
+                        trans-x-00-m ttu"
+            >
+                <li class=" pb0-25 
+                            mb2-00
+                            mb0-00-m
+                            " tabindex="0" title="style Guide" aria-label="style-guide">
+                    <a href="{% url 'website:style-guide' %}" class="white-90">
+                            <h3 class="mb0-00 f1-00 ttu">STYLE GUIDE</h3>
+                    </a>
+                </li>
+                <li class=" pb0-25 
+                            mb2-00
+                            mb0-00-m
+                            " tabindex="0" title="Courses" aria-label="Revit Courses">
+                    <a href="{% url 'website:courses' %}" class="white-90">
+                            <h3 class="mb0-00 f1-00">COURSES</h3>
+                    </a>
+                </li>
+                <li class=" pb0-25
+                            mb2-00
+                            mb0-00-m
+                            bb bw1 b--gold" tabindex="0" title="Discover" aria-label="Other Courses">
+                    <a href="{% url 'website:discover' %}" class="white-90 gold">
+                        <h3 class="mb0-00 f1-00">DISCOVER</h3>
+                    </a>
+                </li>
+                <li class=" pa0-50
+                            mb2-00
+                            mb0-00-m bg-black-60 br0-25 ba b--gold
+                            " tabindex="0" title="Enrol" aria-label="About Me">
+                    <a href="{% url 'website:enrol' %}" class="shadow-4 white-90 ">
+                        <h3 class="mb0-00 f1-00 ">ENROL</h3>
+                    </a>
+                </li>
+                <li class="dn
+                        mb0-00" 
+                        tabindex="0" 
+                        title="Start" 
+                        aria-label="About Me"
+                >
+                        <!-- User Authentication -->
+                    {% if request.user.is_authenticated %}
+                    <!-- Loggen Out User -->
+                    <div id="header-user"
+                        class="flex"
+                    >
+                        <a  href=""
+                            
+                        >
+                            <figure class="flex items-center
+                                pv0-25 ph0-50
+                                white-90
+                                " >
+                                <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                    alt="" 
+                                    class="w2-00 br-100 mr1-00"
+                                />
+                                <figcaption>
+                                <p class="mb0-00">{{request.user.username}}  </p>
+                                <span class="f0-75">@ {{request.user.email}}</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <button id="dropdown-button">  
+                            &DownArrow;  <!--replace with svg -->
+                        </button>
+                        <!-- User Dropdown Menu -->
+                        <div id="dropdown-menu" 
+                            class="flex flex-column flex-end justify-center
+                                w14-00 bg-black-60 mt4-50 z5 absolute pa1-00 ml0-50"
+                        >
+                            <a href=""
+                                class="flex items-center white-90 pa0-50"
+                            >
+                                <figure class="flex items-center justify-between"> 
+                                    <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                        alt="" 
+                                        class="w1-00 h1-00 
+                                            mr0-75" 
+                                    />
+                                    <figcaption>  Dashboard </figcaption>
+                                </figure>
+                            
+                            </a>
+                            <a href=""
+                                class="flex items-center white-90 pa0-50"
+                            >
+                                <figure class="flex items-center justify-between"> 
+                                    <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                        alt="" 
+                                        class="w1-00 h1-00 
+                                            mr0-75" 
+                                    />
+                                    <figcaption>  Settings </figcaption>
+                                </figure>
+                            
+                            </a>
+
+                            <a href="{% url 'accounts:logout' %}"
+                                class="flex items-center white-90 pa0-50"
+                            >
+                                <figure class="flex items-center justify-between"> 
+                                    <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                                        alt="" 
+                                        class="w1-00 h1-00 
+                                            mr0-75" 
+                                    />
+                                    <figcaption>  Logout </figcaption>
+                                </figure>
+                            
+                            </a>
+                        </div>
+                        <!-- User Dropdown Menu -->
+                    </div>
+                    <!-- Loggen Out User --> 
+                    {% else %}
+                    <!-- Logged In User -->
+                    <a href="{% url 'accounts:register' %}" 
+                        class="flex
+                            pv0-50 ph1-00
+                            bg-gold white
+                            br0-25
+                            f1-00 ttu fw6
+                            shadow-4"
+                        >
+                            <h3 class="mb0-00 f1-00">START</h3>
+                        </a> 
+                        <!-- Logged In User -->
+                    
+                    {% endif %}
+                    <!-- User Authenthication -->
+                
+                
+                
+                </li>
+                
+                <li class="dn pb0-25
+                            mb2-00
+                            mb0-00-m" 
+                    tabindex="0"
+                    title="" 
+                    aria-label=""
+                >
+                    <ul id="connect" class="footerNav__Item flex dn-m w-100">
+                        <div class="flex justify-around items-center w-100
+                        mb0-00-m">
+                            <li class="mr0-75"> 
+                                <a href="https://twitter.com/KwameDomfe" title="Follow me on Twitter" target="_blank" rel="noopener noreferrer">
+                                    <img src="{% static 'svgs/twitter.svg' %}" alt="" class="w1-25 blue0">
+                                </a>
+                            </li>
+                            <li class="mr0-75"> 
+                                <a href="https://web.facebook.com/KwameDomfeAppau/" title="Follow me on Facebook" target="_blank" rel="noopener noreferrer">
+                                    <img src="{% static 'svgs/facebook.svg' %}" alt="" class="w1-25">
+                                </a>
+                            </li>
+                            <li class="mr0-75"> 
+                                <a href="https://www.linkedin.com/in/kwame-domfe-appau-071ba61b" title="Connect with me on LinkedIn" target="_blank" rel="noopener noreferrer">
+                                    <img src="{% static 'svgs/linkedin.svg' %}" alt="" class="w1-25">
+                                </a>
+                                
+                            </li>
+                            <li class="mr0-75"> 
+                                <a href="https://www.youtube.com/channel/UCAz9aBbC0Yzq25WmSPOIBjg" title="Follow me on youtube" target="_blank" rel="noopener noreferrer">
+                                    <img src="{% static 'svgs/youtube.svg' %}" alt="" class="w1-25">
+                                </a>
+                            </li>
+                            <li class="mr0-75"> 
+                                <a href="https://wa.me/233249282488?" title="Get In Touch on WhatsApp" target="_blank" rel="noopener noreferrer">
+                                    <img src="{% static 'svgs/WhatsApp.svg' %}" alt="" class="w1-25">
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li> 
+            </ul>    
+        </nav>
+        <h2>Home page Banner</h2>
+        <section id="o__bannerBlock" class="bg-white
+            flex flex-column flex-row-m justify-center items-center 
+            min-vh-90 nmt6-00
+            container90"
+        >
+            <div class=" flex flex-column w-100 w-50-m h-100">
+                <figure class=" flex flex-column items-center justify-center mt6-00
+                                
+                    ">
+                    <img src="/static/images/Portrait_Images/students_coding.jpg" alt="" class="vh-50 vh-100-m cover">
+                </figure>     
+                
+            </div>
+            <div class="flex flex-column justify-center items-center 
+                w-100 w-50-m h-100 black-60 pl1-00 mt6-00">	
+                <hgroup class="tc tl-m w-100 npt2-00 mb2-00">
+                    <h1 class="f1-50 f1-75-s f2-50-l mb1-00 
+                    ">  
+                        Evolve in your Career.                 
+                    </h1>
+                    <h2 class="f1-25 f1-50-s f2-25-l mb3-00">
+                        Learn to author and read <span class="gold">BIM Models</span>.
+                    </h2>
+                </hgroup>
+                <p class="mb4-00 f1-25 f1-50-s f2-00-l
+                        tc tl-m
+                ">
+                    Self directed experiential learning allows you to develop your skills, now and in the future.
+                </p>
+                <div class="flex w-100 justify-center justify-start-m"> 
+                    <a href="/courses/" class=" dib 
+                            pv0-50
+                            ph1-00
+                            mb1-00-m mr2-00
+                            bg-white gold
+                            ba bw1 br2-00
+                            ttu
+                            f1-00 
+                            fw6
+                            shadow-4
+                    ">
+                        explore courses 
+                    </a>
+                    <a href="/enrol/" class=" dib
+                            pv0-50
+                            ph1-00
+                            mb1-00-m
+                            bg-gold white
+                            ba bw1 br2-00
+                            ttu
+                            f1-00 
+                            fw6
+                            shadow-4
+                    ">
+                        ENROLL 
+                    </a>
+                </div>
+            </div> 
+        </section>
+        <h2>Section Banner</h2>
+        <section id="" class="
+            bb b--black-20 bw3
+            "
+        >
+            <div class="flex flex-column justify-center tc w-100
+                mb2-00
+                bg-white"
+            >
+                <hgroup class="flex flex-column justify-center white-90 bg-black-60 tc vh-50">
+                    <h1 class="f2-50 mv2-00 container80">
+                        Career-changing Software Courses for <br> Architectural Engineering and Construction (AEC) Professionals.
+                    </h1>
+                    <h3 class="f1-50 container80 mb2-00">
+                        400-hour programs that have helped thousands of students launch new careers in AEC.
+                    </h3>
+                </hgroup>
+            
+                <div class="flex ggap1-00 justify-center items-center vh-50 container90
+                    "> <span>left</span>
+                <div class="bg-black-50 w 100">
+                        <img src="/static/images/Autodesk/Infotainment_2016_01.png" alt="" class="h16-00 cover"><h2 class="pa0-50 mb0-00 white-90">Autodesk Revit</h2>
+                    </div>
+                    <div class="bg-black-50">
+                        <img src="/static/images/Autodesk/Infotainment_2016_02.png" alt="" class="h16-00 cover"><h2 class="pa0-50 mb0-00 white-90">Autodesk Naviswork</h2>
+                    </div>
+                    <div class="bg-black-50">
+                        <img src="/static/images/Autodesk/Infotainment_2016_03.png" alt="" class="h16-00 cover"><h2 class="pa0-50 mb0-00 white-90">Autodesk Dynamo</h2>
+                    </div>
+                    <div class="bg-black-50">
+                        <img src="/static/images/Autodesk/Infotainment_2016_04.png" alt="" class="h16-00 cover"><h2 class="pa0-50 mb0-00 white-90">Python</h2>
+                    </div>
+                    <span>right</span>
+                <!-- <div class="w16-00 h0-00 pb-100 bg-black-50">Python</div> 
+                <div class="w16-00 h0-00 pb-100 bg-black-50">Python</div> 
+                <div class="w16-00 h0-00 pb-100 bg-black-50">Python</div> 
+                <div class="w16-00 h0-00 pb-100 bg-black-50">Python</div>  -->
+                </div>
+                <p>You can start for FREE! </p>
+                <p>Try out my youtube <a href="http://www.youtube/..." target="_blank" rel="noopener noreferrer">Kwame Domfe Appau</a> channel for <b>expert training</b> snippets on 
+                    <a href="">Revit</a>, 
+                    <a href="">naviswork</a>, 
+                    <a href="">Autodesk Dynamo</a>, 
+                    <a href="">python</a>.</p>
+            </div>
+            
+        </section>
+        <section id="domainName" class="grid gtc12 items-center justify-center
+            w-100 mb4-00
+            bb b--white-20 bw3"
+        >
+            <div class="gc1s8 flex flex-column items-center justify-center
+                container80">
+                <div class="flex flex-column justify-center items-start  
+                    mv4-00">
+                    <h2 class="f2-50 mb2-00">
+                        First, you need a  <br> <span class="dib gold">Part Time Skilled Courses</span> <br> that extends your career.
+                    </h2>
+                    <p class="f1-25 mb1-00">
+                        Become better at your current job or discover a new topic. Join experienced teachers in online live sessions, two evenings a week. 
+                    </p>
+                    
+                    <a class="gold ba pa0-50 br0-25" href="">EXPLORE</a>
+                </div>
+                <div class="grid gtc12 ggap0-25 w-100 white-90 items-center justify-center
+                    ">
+                    <div class="gc1s3 gr1s1 w-100 h0-00 pb-100 bg-black-50">Revit Architecture</div>
+                    <div class="gc10s3 gr1s1 w-100 h-100 bg-black-70">Revit Structures</div>
+                    <div class="gc1s3 gr2s1 w-100 h0-00 pb-100 bg-black-30">Revit MEP</div>
+                    <div class="gc4s3 gr2s1 w-100 h0-00 pb-100 bg-black-10">Autodesk Naviswork</div> 
+                    <div class="gc7s3 gr3s1 w-100 h0-00 pb-100 bg-black-90">Autodesk Dynamo</div> 
+                    <div class="gc10s3 gr2s1 w-100 h0-00 pb-100 bg-black-60">3D Studio Max</div> 
+                    <div class="gc7s3 gr2s1 w-100 h0-00 pb-100 bg-black-40">Python</div> 
+                    <div class="gc4s3 gr1s1 w-100 h0-00 pb-100 bg-black-40">Python</div> 
+                </div>
+            </div>
+
+            <figure class="gc9s4 flex justify-center items-center h-100">
+                <img src="/static/images/Landscape_Images/RectLandscape.jpg" class="w-100 h-100 cover" alt="">
+            </figure>
+            
+        </section>
+        
+        <h2>Main Footer Navigation</h2>
+
+        <div id="page-footer" class="bg-black-90 mb2-00" tabindex="0" title="" aria-label="">
+            <nav id="navigation" class="grid gtc12 
+                    min-vh-50 pv2-00 container90">
+                <section id="footer__about_me" class="gc1s12 gr1s1 gr2s1-l gc1s3-l
+                        w-100" data-use-new="true" role="tabpanel" aria-label="projects" section-index="2">
+                    <div class="grid gtc12 ggap0-00 items-center" aria-hidden="False">
+                        <figure class="gc3s8 gc1s6-s flex gc1s5-m  gc4s6-l
+                            gr1s1-m gr1s1-l
+                            items-start justify-start
+                            mb2-00 mb0-00-s pv2-00-m mb2-00-l
+                            pb0-00-l">
+                            <img src="/static/images/Regular_Images/Square.jpg" alt="" class="br0-50 cover">
+                        </figure> 
+                        <div id="about_me" class="gc1s12 gc7s6-s gc7s6-m gc1s12-l gr2s1-l
+                                ml2-00-s ml0-00-m tj">
+                            <header class="pt0-00  ">
+                                <h2 class="ttu tc">
+                                    <a class="white-90" href="" role="button" aria-expanded="false">about me</a>
+                                </h2>
+                            </header>
+                            <p class="lh-copy f1-00 white-90 i">
+                                Kwame Domfe Appau is a trained architect who is specialized in Building Information Modelling.
+                            </p>
+                            
+                            <p class="lh-copy f1-00 white-90 i">
+                                He is also self-trained computer programmer providing full stack web develoment solutions to businesses large and small.
+                            </p>
+                        </div>
+                        <nav id="m__socialMediaNav" class="gc1s12 gc7s6-m gc1s12-l 
+                                flex flex-column items-center justify-end 
+                                w-100 
+                                mv2-00 pv0-50 
+                                bt bb b--white" tabindex="0">
+                            <ul id="social_media_list" class=" flex justify-between items-center w-100 ma0-00 pa0-00">
+                                <li class="ba br5-00 pa0-50 b--white-90 dib"> 
+                                    <a href="" title="Follow me on Twitter" target="_blank" rel="noopener noreferrer">
+                                        <img src="/static/svgs/twitter.svg" alt="" class="w1-00">
+                                    </a>
+                                </li>
+                                <li class="ba br5-00 pa0-50 b--white-90 dib"> 
+                                    <a href="" title="Follow me on Facebook" target="_blank" rel="noopener noreferrer">
+                                        <img src="/static/svgs/facebook.svg" alt="" class="w1-00 white-90">
+                                    </a>
+                                </li>
+                                <li class="ba br5-00 pa0-50 b--white-90 dib"> 
+                                    <a href="" title="Connect with me on LinkedIn" target="_blank" rel="noopener noreferrer">
+                                    <img src="/static/svgs/linkedin.svg" alt="" class="w1-00">
+                                    </a>
+                                    
+                                </li>
+                                <li class="ba br5-00 pa0-50 b--white-90 dib"> 
+                                    <a href="" title="Follow me on youtube" target="_blank" rel="noopener noreferrer">
+                                        <img src="/static/svgs/youtube.svg" alt="" class="w1-00">
+                                    </a>
+                                </li>
+                                <li class="ba br5-00 pa0-50 b--white-90 dib"> 
+                                    <a href="" title="Get In Touch on WhatsApp" target="_blank" rel="noopener noreferrer">
+                                        <img src="/static/svgs/Whatsapp.svg" alt="" class="w1-00">
+                                    </a>
+                                </li>
+                            </ul> 
+                        </nav>
+                    </div>
+                </section>
+        
+                <section id="footer__courses" class="gc7s6 gr2s1 
+                        gc1s6-s gr2s1-s 
+                        gc1s3-m gc4s3-l
+                        white-90
+                        ml1-00-m" data-use-new="true" role="tabpanel" aria-label="principles" section-index="3">
+                    <div id="" class="mb2-00" data-use-new="true">
+                        <nav aria-label="">
+                            <hgroup>
+                                <h2 class="ttu">
+                                    AEC Courses
+                                </h2>
+                            </hgroup>
+                            <ul class="">
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href=""> 
+                                        Autodesk Revit Architecture
+                                    </a>
+                                </li>
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href="">
+                                        Autodesk Revit Structures
+                                    </a>
+                                </li>
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href="">
+                                        Autodesk Revit MEP
+                                    </a>
+                                </li>
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href="">
+                                        Autodesk Naviswork Manage
+                                    </a>
+                                </li>
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href="">
+                                        Autodesk Dynamo
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="" class="" data-use-new="true">
+                        <nav aria-label="">
+                            <header>
+                                <h2 class="ttu">
+                                    Web Dev't Courses
+                                </h2>
+                            </header>
+                            <ul class="">
+                            
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href="">
+                                        Introduction to HTML
+                                    </a>
+                                </li>
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href="">
+                                        Introduction to CSS
+                                    </a>
+                                </li>
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href="">
+                                        Intoduction to JavaScript
+                                    </a>
+                                </li>
+                                <li class="mb1-00 ">
+                                    <a class="white-90" href=""> 
+                                        Introduction to Python
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+        
+                <section id="footer__resources" class="gc1s6 gr2s1
+                        gc1s6-s 
+                        gc4s3-m gr2s1-m gr3s1-s gc7s3-l
+                        mr2-00-l" data-use-new="true" role="tabpanel" aria-label="PRACTICE" section-index="4">
+                    <header>
+                        <h2 class="ttu white-90">
+                            Discover
+                        </h2>
+                    </header>
+        
+                    <div class="" aria-hidden="False">
+                        
+                        <div id="" class="mb2-00" data-use-new="true">
+                            <nav aria-label="practice">
+                                <ul class="">
+                                    <li class="mb1-00 ">
+                                        <a class="white-90" href="">Blog</a>
+                                    </li>
+                                    <li class="mb1-00 "><a class="white-90" href="">Freebies</a></li>
+                                    <li class="mb1-00 ">
+                                        <a class="white-90" href="">Career Services
+                                        </a>
+                                    </li>
+                                    <li class="mb1-00 ">
+                                        <a class="white-90" href="">All Careers in AEC
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <header>
+                        <h2 class="ttu white-90">
+                            Resources B
+                        </h2>
+                    </header>
+        
+                    <div class="" aria-hidden="False">
+                        
+                        <div id="" class="" data-use-new="true">
+                            <nav aria-label="practice">
+                                <ul class="">
+                                    <li class="mb1-00 ">
+                                        <a class="white-90" href="">Blog</a>
+                                    </li>
+                                    <li class="mb1-00 "><a class="white-90" href="">Freebies</a></li>
+                                    <li class="mb1-00 ">
+                                        <a class="white-90" href="">Career Services
+                                        </a>
+                                    </li>
+                                    <li class="mb1-00 ">
+                                        <a class="white-90" href="">All Careers in AEC
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+        
+                <section id="recents" class="gr3s2 gc1s12 flex flex-column
+                        gc7s6-s gr2s1-s 
+                        gc7s6-m gc10s3-l
+                        " data-use-new="true" role="tabpanel" aria-label="people" section-index="">
+                    <header>
+                        <h2 class="ttu white-90">
+                            Recents
+                        </h2>
+                    </header>
+                    <div class="grid gtc2 ggap0-50" aria-hidden="False">
+                        
+                        <div id="" class=" br1-00 gr1s1 gc1s1 gr1s1-s gc1s1-s h-100" data-use-new="true">                    
+                            <figure class="grid items-center justify-end">
+                                <img src="/static/images/Regular_Images/Square.jpg" alt="" class="br0-50 gc1s1 gr1s1">
+                                <figcaption class="gc1s1 gr1s1 white-90">
+                                    label one
+                                </figcaption>
+                            </figure> 
+        
+                        </div>
+        
+                        <div id="" class=" br1-00 gr2s1 gc1s1 gr1s1-s gc2s1-s " data-use-new="true">          
+                            <figure class="grid items-center justify-center">
+                                <img src="/static/images/Regular_Images/Square.jpg" alt="" class="br0-50 gc1s1 gr1s1">
+                                <figcaption class="gc1s1 gr1s1 tc">
+                                    label two
+                                </figcaption>
+                            </figure>     
+                        </div>
+        
+                        <div id="" class=" br1-00 gr1s1 gc2s1 gr2s1-s gc1s1-s " data-use-new="true">
+                            <figure class="grid items-center justify-center">
+                                <img src="/static/images/Regular_Images/Square.jpg" alt="" class="w-100 br0-50 gc1s1 gr1s1">
+                                <figcaption class="gc1s1 gr1s1 tc">
+                                    label three
+                                </figcaption>
+                            </figure> 
+                        </div>
+        
+                        <div id="" class=" br1-00 gr2s1 gc2s1 gr2s1-s gc2s1-s " data-use-new="true">
+                            <figure class="grid items-center justify-center">
+                                <img src="/static/images/Regular_Images/Square.jpg" alt="" class="w-100 br0-50 gc1s1 gr1s1">
+                                <figcaption class="gc1s1 gr1s1 tc">
+                                    label four
+                                </figcaption>
+                            </figure>  
+                        </div>
+                    </div>
+                </section>
+            </nav> 
+            <div id="m__poweredby" class="gc1s12 gc7s6-s gc1s12-m gr5s1 gr3s1-s gr4s1-m gr3s1-l flex items-center justify-center flex-column 
+                gray bg-white pv1-00 
+                f0-75">
+                <small class="mt0-25 mb0-25">powered by:</small>
+                <a href="https://www.kdadesign.tech" target="_blank" class="gray">
+                    <div class="flex">
+                        <small class="">
+                            kda design technologies
+                        </small>
+                        <small class="ml0-50">
+                            © 2023
+                        </small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endblock pageContent %}
+</div>

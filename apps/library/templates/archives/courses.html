@@ -1,0 +1,253 @@
+{% extends 'base_layout3.html' %}
+
+{% load static %}
+
+{% block title %} courses {% endblock title %}
+
+{% block content %}
+
+<div class="fixed bg-black-50 z-5 w-100">
+    <hgroup class="bg-black-60 ">
+        <ul class="container90 h3-00 pa0-50 b flex justify-between items-center white-90">
+            <li>
+                <a href="{% url 'website:courses' %}"
+                    class="white-90">All Courses</a>
+            </li>
+            <li>
+                <a href="{% url 'website:course' %}"
+                    class="white-90">Program</a>
+            </li>
+            <li>
+                <a href="{% url 'website:revit' %}"
+                    class="white-90">Revit</a>
+            </li>
+            <li>
+                <a href="{% url 'website:naviswork' %}"
+                    class="white-90">Naviswork</a>
+            </li>
+            <li>
+                <a href="{% url 'website:dynamo' %}"
+                class="white-90">Dynamo</a>
+            </li>
+            <li>
+                <a href="{% url 'website:python' %}"
+                class="white-90">Python</a>
+            </li>
+        </ul>
+    </hgroup>
+</div>
+    
+<div class="grid gtc12 relative container90 pt6-00"
+> 
+    <div id=""
+        class="gc1s9 w-100 tj "
+    >
+        <header id="o__bannerBlock" 
+            class="
+            flex justify-center items-center 
+            w-100 f1 tracked"
+        >
+            <figure class="h-100 w-100 
+                ">
+                <h2>Featured Course</h2>
+                <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                    alt="" 
+                    class="cover vh-50 w-100"
+                />
+                <figcaption>
+                    <a href="{% url 'website:course' %}">
+                        <h2>Course Name</h2>
+                        {% lorem 50 w random %}
+                    </a>
+                </figcaption>
+            </figure>
+        </header>
+        <main>
+            <div class="grid ggap1-00">
+                <div class="gc1s8 gr1s1 f1-25 tracked ">
+                    <figure class="h-100 w-100 
+                    ">
+                        <h2>Popular Course</h2>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover vh-50 w-100"
+                        />
+                        <figcaption>
+                            <h2>Course Name</h2>
+                            {% lorem 10 w random %}
+
+                            <ul>
+                                <li>Sheduling</li>
+                                <li>Design Options</li>    
+                                <li>Phasing</li>
+                                <li>Components</li>
+                                <li>Conceptual Massing</li>    
+                                <li>System Elements</li>
+                            </ul>
+                        </figcaption>
+                    </figure> 
+                </div>
+                <div class="gc9s4 gr1s1 f1-25 tracked ">
+                    <figure class="h-100 w-100 
+                    ">
+                        <h2>Featured Course</h2>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover vh-50 w-100"
+                        />
+                        <figcaption>
+                            <h2>Course Name</h2>
+                            {% lorem 20 w random %}
+
+                        </figcaption>
+                    </figure> 
+                </div>
+                <div class="gc1s12 gr2s1 f1-25 tracked ">
+                    <figure class="h-100 w-100 
+                    ">
+                        <h2>Featured Course</h2>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover vh-50 w-100"
+                        />
+                        <figcaption>
+                            <h2>Course Name</h2>
+                            {% lorem 20 w random %}
+                        </figcaption>
+                    </figure> 
+                </div>
+                <div class="gc1s4 gr3s1 f1-25 tracked ">
+                    <figure class="h-100 w-100 
+                    ">
+                        <h2>Free Course</h2>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover vh-50 w-100"
+                        />
+                        <figcaption>
+                            <h2>Course Name</h2>
+                            {% lorem 20 w random %}
+                        </figcaption>
+                    </figure> 
+                </div>
+                <div class="gc5s4 gr3s1 f1-25 tracked ">
+                    <figure class="h-100 w-100 
+                    ">
+                        <h2>Free Course</h2>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover vh-50 w-100"
+                        />
+                        <figcaption>
+                            <h2>Course Name</h2>
+                            {% lorem 20 w random %}
+                        </figcaption>
+                    </figure> 
+                </div>
+                <div class="gc9s4 gr3s1 f1-25 tracked ">
+                    <figure class="h-100 w-100 
+                    ">
+                        <h2>Free Course</h2>
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" 
+                            alt="" 
+                            class="cover vh-50 w-100"
+                        />
+                        <figcaption>
+                            <h2>Course Name</h2>
+                            {% lorem 20 w random %}
+                        </figcaption>
+                    </figure> 
+                </div>
+            </div>
+        </main>
+        <footer class="bg-black-90 pa1-00 white-90 mb2-00">
+            put a page footer
+        </footer>
+    </div>
+
+    <div class="gc10s3 ml1-00 relative"
+    >
+        <div class="sticky top-8">
+            
+            {% comment %} <div class="flex flex-column justify-center items-center 
+                w-100 black-60">	
+                <hgroup class="tc tl-m w-100 npt2-00 mb2-00">
+                    <h2 class="f1-00 f1-25-s f2-00-l mb0-00">
+                        Before you learn <span class="gold">REVIT</span>.
+                    </h2>
+                </hgroup>
+                <p class="mb2-00 mb6-00-m f1-25 f1-50-l
+                        tc tl-m
+                ">
+                    Self directed experiential learning allows you to develop your skills, now and in the future.
+                </p>
+                
+            </div> 
+            
+            <small class="flex ba pa0-50 
+                bg-black-50 white-90"
+            >
+                BACK
+            </small>
+            <h4 class="f1-00 pa0-25 bg-black-50 white-90">Revit Mastery Documentation</h4>
+            <ul>
+                <li>Sheduling</li>
+                <li>Design Options</li>    
+                <li>Phasing</li>
+                <li>Components</li>
+                <li>Conceptual Massing</li>    
+                <li>System Elements</li>
+            </ul>
+
+            <div class="flex w-100 justify-center justify-start-m"> 
+                <a href="#" class=" dib 
+                        pv0-50
+                        ph1-00
+                        mb1-00-m mr2-00
+                        bg-white gold
+                        ba bw1 br2-00
+                        ttu
+                        f1-00 
+                        fw6
+                        shadow-4
+                ">
+                    explore courses 
+                </a>
+                <a href="#connect" class=" dib
+                        pv0-50
+                        ph1-00
+                        mb1-00-m
+                        bg-gold white
+                        ba bw1 br2-00
+                        ttu
+                        f1-00 
+                        fw6
+                        shadow-4
+                ">
+                    ENROLL 
+                </a>
+            </div> 
+
+            <div class="flex flex-column justify-center items-center 
+                w-100 black-60"
+            >	
+                <hgroup class="tc tl-m w-100 npt2-00 mb2-00">
+                    <h2 class="f1-00 f1-25-s f2-00-l mb0-00">
+                        Before you learn <span class="gold">REVIT</span>.
+                    </h2>
+                </hgroup>
+                <p class="mb2-00 mb6-00-m f1-25 f1-50-l
+                        tc tl-m
+                ">
+                    Self directed experiential learning allows you to develop your skills, now and in the future.
+                </p>
+                
+            </div>  {% endcomment %}
+        </div>
+    </div>
+
+    <div class="gc1s12">
+        {% include 'partials/_mainFooter.html' %}
+    </div>
+</div>
+{% endblock %}    

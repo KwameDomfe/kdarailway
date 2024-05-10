@@ -1,0 +1,66 @@
+{% extends 'base_layout2.html' %}
+{% load static %}
+{% block content %}
+<div class="vh-100 flex">
+    <div class="flex flex-column items-center justify-center 
+        w-50 h-100
+        pa2-00"
+    >
+        <h1>Thank you for passing through...</h1>
+        <p class="ttc">Do not hesitate to contact me just in case you need help !</p>
+         {% if request.user.is_authenticated %}
+             <form 
+                 action="." 
+                 method="POST"
+             >{% csrf_token %}
+                 <p>Are you sure you want to logout?</p>
+                 
+                 <div style="margin-bottom:16px">
+                     <button id=""
+                         type="submit">
+                         Yes, logout.
+                     </button>
+                 </div>
+             </form>
+         {% else %}
+             <p>You are not logged in. Would you like to <a href="{% url 'accounts:login' %}">login</a>?</p>
+         {% endif %}
+    </div>
+    <div class="flex flex-column items-center justify-center 
+        w-50 h-100
+        pa2-00
+        bg-black-50"
+    >
+        <div id="m__kda--Logo" 
+            class="" 
+            tabindex="0" 
+            title="Kwame Domfe Appau's Logo" 
+            aria-label="Kwame Domfe Appau's Logo"
+        >
+            <a href="{% url 'website:index' %}">
+                <figure class="flex items-center justify-center"   
+                >   
+                    <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+                            alt="Geolo Logo" 
+                            class=" w4-00 h4-00
+                                    br-100"
+                    />
+                    <figcaption class=" flex flex-column items-center justify-center  
+                                        ml1-00
+                                        w14-00
+                                        black-60">
+                        <h2 class="mb0-50 f1-00 tracked">
+                            KWAME DOMFE APPAU
+                        </h2> 
+                        <h3 class="flex justify-center items-center f0-50 mb0-00 tracked">
+                            designer || programmer || developer
+                        </h3>
+                    </figcaption>
+                </figure>   
+            </a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

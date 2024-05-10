@@ -1,0 +1,79 @@
+<a  href=""
+>
+    <figure class="flex items-center
+        pv0-25 ph0-50
+        white-90
+        " 
+    >
+        <img src="{% static 'images/Logo_Images/LOGO.png' %}" 
+            alt="" 
+            class="w2-00 mr1-00"
+        />
+        <figcaption>
+        <p class="mb0-00">{{request.user.username}}  </p>
+        <span class="f0-75">@ {{request.user.email}}</span>
+        </figcaption>
+    </figure>
+</a>
+<button id="dropdown-button">  
+    &DownArrow;  <!--replace with svg -->
+</button>
+
+{% comment %} {% block libraryAsideLeft %}
+    <aside class="gc1s2 w16-00"
+    >
+        <div class="sticky mb2-00 top-5 vh-100 pt3-00"
+        >
+            <div class="flex flex-column justify-between items-center  
+                w-100 h-100 
+                ph1-00 pt2-00 
+                bg-black-60 white-90 tj"
+            >	
+                <hgroup id="asideHeader"
+                    class="tc tl-m w-100 mb1-00 bg-red"
+                >
+                    <h2 class="f1-00 f1-25-s f1-25-l mv0-00">
+                        On this page
+                    </h2>
+                    <h2 class="f1-00 f1-25-s f1-25-l mv0-00">
+                        {% block pageTS %}Page Title{% endblock pageTS %}
+                    </h2>
+                </hgroup>
+                <section class="h-100 w-100">
+                    <ul id="asideMain"
+                        class="w-100 b white-90 tl">
+                        <li>
+                            <a href="{% url 'library:library' %}"
+                                class="white-90">Library</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'library:atoms' %}"
+                                class="white-90">Atoms</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'library:molecules' %}"
+                            class="white-90">Molecules</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'library:organisms' %}"
+                            class="white-90">Organisms</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'library:templates' %}"
+                            class="white-90">Templates</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'library:pages' %}"
+                            class="white-90">Pages</a>
+                        </li>
+                    </ul>
+                </section>
+                <footer id="asideFooter"
+                    class="pa1-00"
+                >
+                    Aside Footer
+                </footer>
+            </div> 
+        </div> 
+    </aside>
+{% endblock libraryAsideLeft %} {% endcomment %}

@@ -1,0 +1,50 @@
+<div id=""
+        class="flex flex-column items-center justify-between 
+            w-100 h-100"
+            
+>
+    <hgroup class="gold w-100 tc pv2-00 bg-black-90">
+        <h1 class="mv0-00 ">Login</h1>
+        {% comment %} <p class="ttc ma0-00 mb1-00">Welcome Back</p>
+        <small class="ttc mb0-00">Do not hesitate to contact me just in case you need help !</small> {% endcomment %}
+    </hgroup>
+   
+    {% if not request.user.is_authenticated %}
+    <form id=""
+        action="." 
+        method="POST"
+        class="w-100 flex flex-column pa2-00 mb6-00"
+    >{% csrf_token %}
+        
+        {{ form.as_p }}
+
+        <div class="mt3-00">
+            <button id=""
+                type="submit"
+                class="pa0-50 bg-gold white-90 b--none br0-25 ttu b"
+            >
+                Login
+            </button>
+        </div>
+    </form>
+    <footer class="w-100 bg-black-90  pv2-00 pb4-00 flex items-center justify-center"> 
+        <div >
+            Need an account? Please <a href="{% url 'accounts:register' %}" class="white-90 b--gold b ba bg-black-60 br0-25 ph0-50 pv0-25 ttu">Register</a> .
+        </div>
+    </footer>
+    {% else %}
+    <footer class="flex items-center justify-center
+        w-100
+        pv2-00 
+        white-90 bg-black-90 "
+    >
+        <p>You are already logged in. Would you like to 
+            <a href="{% url 'accounts:logout' %}"
+                class="pv0-25 ph0-50 
+                white-90 b ba b--gold br0-25 
+                bg-black-60 ttu">logout</a> ?</p>
+        
+    </footer> 
+    {% endif %}
+       
+</div>

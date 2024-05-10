@@ -1,0 +1,42 @@
+    <div id="accountsRegister"
+        class="flex flex-column items-center justify-between
+            w-100 h-100"
+    >
+        <hgroup class="w-100 tc pv2-00 gold bg-black-90">
+            <h1 class="ttc ma0-00 mb0-00">Register</h1>
+            {% comment %} <h1 class="ttc ma0-00 mb1-00">get started on your journey</h1>
+            <p class="ttc mb1-00">Do not hesitate to contact me just in case you need help !</p> {% endcomment %}
+        </hgroup>
+        {% if not request.user.is_authenticated %}
+            <form 
+                action="." 
+                method="POST"
+                class="pa2-00 white-90"
+            >{% csrf_token %}
+
+                {{ form.as_p }}
+
+                <div class="mt3-00">
+                    <button id=""
+                        type="submit"
+                        class="pa0-50 bg-gold white b--none b br0-25 ttu"
+                    >
+                        Register.
+                    </button>
+                </div>
+            </form>
+            <footer class=" w-100 bg-black-90  white-90 pv2-00 flex items-center justify-center"> 
+                <div >
+                    Already have an account? Please 
+                    <a href = "{% url 'accounts:login' %}" 
+                        class="white-90 b ba b--gold br0-25 bg-black-60 pv0-25 ph0-50 ttu">Login</a> .
+                </div>
+            </footer>
+        {% else %}
+            <footer class="bg-black-90 w-100 white-90 pv2-00 pb4-00 flex items-center justify-center"> 
+                
+                <p>You are already logged in and cannot Register. Would you like to <a class="white-90 b ba b--gold br0-25 bg-black-60 pv0-25 ph0-50 ttu" href="{% url 'accounts:logout' %}">Log Out</a> ?</p> 
+            
+            </footer> 
+        {% endif %}
+    </div>

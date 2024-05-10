@@ -1,0 +1,174 @@
+{% extends 'base_layout3.html' %}
+
+{% load static %}
+
+{% block title %} Style Guide {% endblock title %}
+
+{% block content %}
+
+    <div id=""
+        class="fixed bg-black-50 z-5 w-100">
+        {% include '_partials/discover_nav.html' %}
+    </div>
+    
+    <div id=""
+        class="grid gtc12 container90 mt3-00"
+    > 
+        <div class="gc1s6 gr1s1"
+        >
+            <div class="sticky mb2-00 top-5 vh-100 pt3-00"
+                >
+                <div class="flex flex-column justify-start items-center  
+                    w-100 h-100 
+                    ph1-00 pt3-00 
+                    bg-black-60 white-90
+                    tj"
+                >	
+                    <hgroup class="tc tl-m w-100 mb1-00"
+                    >
+                        <h2 class="f1-00 f1-25-s f1-25-l mv0-00">
+                            Style Guide</span>.
+                        </h2>
+                    </hgroup>
+                    <p class="mb2-00 mb6-00-m f1-25 f1-50-s f1-00-l w-100
+                            "
+                    >
+                        {% lorem 20 w random %}
+                    </p>
+                    <div class="flex w-100 justify-center justify-start-m"> 
+                        <a href="#" class=" dib 
+                                pv0-50
+                                ph1-00
+                                
+                                bg-white gold
+                                ba bw1 br2-00
+                                ttu
+                                f1-00 
+                                fw6
+                                shadow-4
+                        ">
+                            explore courses 
+                        </a>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+        <div class="gc7s6 gr1s1 grid container"
+        >
+         
+            <header id="o__bannerBlock" class="
+                flex justify-center items-center 
+                "
+            >
+                <div class="w-100">
+                    <figure class="vh-50 flex items-center justify-center mt3-00
+                                    
+                        "
+                    >
+                        <img src="/static/images/Portrait_Images/students_coding.jpg" alt="" 
+                            class="cover h-100"
+                            />
+                    </figure>  
+                        
+                    <hgroup class="gc1s12 tc mv2-00">
+                            <h2>Style Guide</h2>
+                    </hgroup>    
+                </div>
+            </header>
+            <main>
+                <div class="grid gtc12 bg-black-10 pa1-00 ggap2-00">
+                    <div class="gc1s12">
+                        <article class="mb2-00">
+                            <header>
+                                <hgroup class="flex">
+                                    <h2>Tags</h2>
+                                </hgroup>
+                            </header>
+                            <main>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                            </main>
+                            <footer>
+                                <a href="">CTA</a>
+                            </footer>
+                        </article>
+                        <article class="mb2-00">
+                            <header>
+                                <hgroup class="flex">
+                                    <h2>Atoms</h2>
+                                </hgroup>
+                            </header>
+                            <main>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                            </main>
+                            <footer>
+                                <a href="">CTA</a>
+                            </footer>
+                        </article>
+                        <article class="mb2-00">
+                            <header>
+                                <hgroup class="flex">
+                                    <h2>Molecules</h2>
+                                </hgroup>
+                            </header>
+                            <main>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                            </main>
+                            <footer>
+                                <a href="">CTA</a>
+                            </footer>
+                        </article>
+                        <article class="mb2-00">
+                            <header>
+                                <hgroup class="flex">
+                                    <h2>Organisms</h2>
+                                </hgroup>
+                            </header>
+                            <main>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                            </main>
+                            <footer>
+                                <a href="">CTA</a>
+                            </footer>
+                        </article>
+                        <article class="mb2-00">
+                            <header>
+                                <hgroup class="flex">
+                                    <h2>Templates</h2>
+                                </hgroup>
+                            </header>
+                            <main>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                            </main>
+                            <footer>
+                                <a href="">CTA</a>
+                            </footer>
+                        </article>
+                        <article class="mb2-00">
+                            <header>
+                                <hgroup class="flex">
+                                    <h2>Pages</h2>
+                                </hgroup>
+                            </header>
+                            <main>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam officiis sunt sed, libero ut nostrum ab rerum, culpa in pariatur commodi! Deleniti, tempore. Fuga tempore nesciunt excepturi animi quasi.</p>
+                            </main>
+                            <footer>
+                                <a href="">CTA</a>
+                            </footer>
+                        </article>
+                    </div>
+                    
+                </div>
+            </main>
+            
+            <footer class="bg-black-90 pa1-00 white-90 mb2-00">
+                put a page footer
+            </footer>
+           
+        </div>
+
+        <div class="gc1s12">
+            {% include 'partials/_mainFooter.html' %}
+        </div> 
+    </div>
+{% endblock %}    

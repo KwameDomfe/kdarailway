@@ -1,0 +1,1 @@
+web: gunicorn kda.wsgi --log-file -

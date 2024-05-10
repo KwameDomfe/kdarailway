@@ -1,0 +1,60 @@
+{% load static %}
+<div 
+    class="grid gtc12 ggap0-00 items-center justify-between bg-black-60 white-90 h-100" 
+    aria-hidden="False"
+>
+    <figure class="gc5s4 gc1s6-s flex gc1s12-m  gc5s4-l
+        gr1s1-m gr1s1-l
+        items-start justify-start
+        mb0-00-s
+        pb0-00-l"
+    >
+        <img src="{% static 'images/Regular_Images/Square.jpg' %}" 
+            alt=""
+            class="br0-50 cover"
+        />
+    </figure> 
+    <div id="free_details" 
+        class="gc1s12 gc7s6-s gc1s12-m gc2s10-l gr2s1-l
+            ml2-00-s ml0-00-m tj h-100"
+    >
+        <header class="pt0-00  ">
+            <h2 class="ttu tc">
+                <a class="white-90" href=""
+                    role="button" 
+                    aria-expanded="false"
+                >{% block planName %}FREE PLAN{% endblock planName %}</a>
+            </h2>
+        </header>
+        <div class="flex justify-center items-baseline mv2-00">
+            <span class="mr0-50 f3-00 ">$39</span>
+            <span class="text-gray-500">per month</span>
+        </div>
+        <p class="lh-copy f1-00 white-90 i">
+            {% lorem 15 w random %}
+        </p>
+        <div id="verticalList_1" 
+            class="flex 
+                w-100 
+                pb1-00 mb1-00 
+                bb"
+        >
+            <ul class="w-100 flex flex-column items-start justify-center">
+                <li>item quas tenetur sint laborios</li>
+                <li>item quas tenetur sint laborios</li>
+                <li>item quas tenetur sint laborios</li>
+                <li>item quas tenetur sint laborios</li>
+                <li>item quas tenetur sint laborios</li>
+            </ul>
+        </div>
+        <div class=" pa0-50
+                mb2-00
+                mb0-00-m bg-black-60 br0-25 ba b--gold
+                " tabindex="0" title="Enrol" aria-label="About Me">
+            <a href="" class="shadow-4 white-90 tc">
+                <h3 class="mb0-00 f1-00 ">select</h3>
+            </a>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,56 @@
+{% extends 'website/course.html' %}
+
+{% block course_name %} revit {% endblock course_name%}
+
+{% block course_description %}
+        Revit BIM allows you to develop your skills, now and in the future.
+{% endblock course_description %}
+
+{% block course_url %}
+    {% url 'website:revit-introduction' %}
+{% endblock course_url %}
+
+{% block course_01_name %}
+    Introduction to Revit 
+{% endblock course_01_name %} 
+
+<div>
+    {% block course_01_lesson_01 %}
+        {% block chapter %}chapter-yyy{% endblock chapter %}
+        {% block lesson_01_title %}
+        Before you start Revit
+        {% endblock lesson_01_title %}
+    {% endblock course_01_lesson_01 %}
+
+    {% block course_01_lesson_02 %}
+        {% block lesson_02_title %}
+        Revit Terminologies
+        {% endblock lesson_02_title %}
+    {% endblock course_01_lesson_02 %}
+
+    {% block course_01_lesson_03 %}
+        {% block lesson_03_title %}
+        Revit User Interface
+        {% endblock lesson_03_title %}
+    {% endblock course_01_lesson_03 %}
+
+    {% block course_01_lesson_04 %}
+        {% block lesson_04_title %}
+        Revit User Interface
+        {% endblock lesson_04_title %}
+    {% endblock course_01_lesson_04 %}
+
+    {% block course_01_lesson_05 %}
+        {% block lesson_05_title %}
+        Revit User Interface
+        {% endblock lesson_05_title %}
+    {% endblock course_01_lesson_05 %}
+
+    {% block course_02_name %}
+        Revit Intermediate
+    {% endblock course_02_name %} 
+
+    {% block course_03_name %}
+        Revit Mastery
+    {% endblock course_03_name %} 
+</div>

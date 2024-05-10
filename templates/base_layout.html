@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- metadata -->
+    <meta 
+        charset="utf-8" 
+    />
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0"
+    />
+    <meta 
+        http-equiv="X-UA-Compatible" 
+        content="ie=edge" 
+    />
+    <meta 
+        name = "description" 
+        content="Kwame Domfe Appau's revit and BIM related softwares website provides information about BIM technologies including Revit, Revit Architecture, Revit MEP, Revit Structure and APIs for all revit related apps." 
+    />
+    <meta 
+        name="author" 
+        content="kdadesign.tech"
+    />
+    <meta
+        name="Keywords" 
+        content="Kwame Domfe Appau, revit, revit architecture, revit MEP, revit structure, revit essential training, revit courses, free courses, mastering revit, modelling, drafting, documentation, building information modelling, BIM, BIM Models,Integrated Project Delivery, IPD "
+    />
+    <!--- metadata -->
+
+    <!-- Favicon & title -->
+    <link 
+        href="{% static 'images/Logo_Images/GDB_Logo.png' %}" 
+        rel="shortcut icon" 
+        type="image/png" 
+    />
+    <title>
+        Kwame Domfe Appau ||    {% block title %} 
+                                    Page Title Goes Here 
+                                {% endblock title %}
+    </title>
+    <!-- Favicon & title -->
+
+    <!-- Custom Styles -->
+    <link 
+        href="{% static 'css/gdb_normalize.css' %}" 
+        rel="stylesheet" 
+        type="text/css"
+        media = "screen" 
+    />
+    <link 
+        href="{% static 'css/utility_classes.css' %}" 
+        rel="stylesheet"  
+        type="text/css"
+        media = "screen" 
+    />
+    <link 
+        href="{% static 'css/style.css' %}" 
+        rel="stylesheet" 
+        type="text/css"
+        media = "screen" 
+    />  
+    <!-- Custom Style -->
+    
+    {% block others %}   
+    
+    {% endblock others %}
+
+</head>
+<body id="" 
+    class="pa0 ma0"
+    >
+    <!-- mainNav start -->
+    {% comment %} {% include 'partials/_mainNav.html' %} {% endcomment %}
+    <!-- mainNav end -->
+
+    <!-- main Content start -->
+    <main id="mainContent"
+        class="container80">
+        
+        {% if messages %}
+            <ul class="
+                mb3-00 pa1-00 pb0-00
+                ba br0-50 b--white-50
+                red ">
+                {% for message in messages %}
+                <!-- <li {% if message.tags %} class="{{message.tags}} {% endif %}"> -->
+                <li class="mb1-00">
+                    {{message}}
+                </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+      
+        {% block content %}
+        <div class="container">
+            
+        </div>
+        {% endblock %}
+      
+        
+    </main>  
+    <!-- main Content end -->
+
+    <!-- mainFooter start-->
+    {% comment %} {% include 'partials/_mainFooter.html' %} {% endcomment %}
+    <!-- mainFooter end-->
+</body>
+</html>

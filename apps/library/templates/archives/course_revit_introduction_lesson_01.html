@@ -1,0 +1,40 @@
+{% extends 'website/course.html' %}
+
+{% block software_name %} 
+	revit introduction - Chapter 01 
+{% endblock software_name%}
+
+{% block software_description %}
+    Revit Intoduction allows you to develop your skills, now and in the future.
+{% endblock software_description %}
+
+{% block course_name %}
+        <a href="{% url 'website:revit-introduction' %}"
+                class="b black-60"
+        > Revit Introduction
+        </a>
+{% endblock course_name %}
+
+{% block chapter_01 %}
+<hgroup class="mb1-00">
+    <h4 class="">Chapter 01</h4>
+    <p class="mb0-00"> {{ chapterTitle }}Before you start Revit</p>
+</hgroup>
+{% endblock chapter_01 %}
+{% block chapter_02 %}
+<hgroup class="mb1-00">
+    <h4 class="">Chapter 02</h4>
+    <p class="mb0-00">Revit Terminologies</p>
+</hgroup>
+{% endblock chapter_02 %}
+{% block chapter_03 %}
+<hgroup class="mb1-00">
+    <h4 class="">Chapter 03</h4>
+    <p class="mb0-00">Revit Terminologies</p>
+</hgroup>
+{% endblock chapter_03 %}
+
+
+
+
+

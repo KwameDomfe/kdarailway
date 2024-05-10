@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+        <meta 
+            charset="utf-8" 
+        />
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta 
+            http-equiv="X-UA-Compatible" 
+            content="ie=edge" 
+        />
+        <meta 
+            name = "description" 
+            content="Kwame Domfe Appau's revit and BIM related softwares website provides information about BIM technologies including Revit, Revit Architecture, Revit MEP, Revit Structure and APIs for all revit related apps." 
+        />
+        <meta 
+            name="author" 
+            content="kda design technologies"
+        />
+        <meta
+            name="Keywords" 
+            content="Kwame Domfe Appau, revit, revit architecture, revit MEP, revit structure, revit essential training, revit INTRO  revit intermediate, revit free courses, free course, mastering revit, modelling, drafting, documentation, building information modelling, BIM,"
+        />
+
+    <!-- Favicon & title -->
+        <link 
+                href="{% static 'media/images/Logo_Images/GDB_Logo.png' %}" 
+                rel="shortcut icon" 
+                type="image/png" 
+            />
+        <title>
+            Kwame Domfe Appau || {% block title %} Page Title Goes Here {% endblock title %}
+        </title>
+    <!-- Favicon & title -->
+
+    <!-- Custom Styles -->
+        <link 
+            href="{% static '/css/gdb_normalize.css' %}" 
+            rel="stylesheet" 
+            type="text/css" 
+        />
+        <link 
+            href="{% static '/css/utility_classes.css' %}" 
+            rel="stylesheet"  
+            type="text/css" 
+        />
+        <link 
+            href="{% static '/css/style.css' %}" 
+            rel="stylesheet" 
+            type="text/css" 
+        />  
+    <!-- Custom Style -->
+    
+    {% block others %}   
+    
+    {% endblock others %}
+
+</head>
+<body class="pa0 ma0">
+
+    {% include 'partials/_mainNav.html' %}
+
+    <!-- main Content -->
+        {% block content %}
+            <div class="">
+                
+            </div>
+        {% endblock content %}
+    <!-- main Content -->
+</body>
+</html>
